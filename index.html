@@ -1,25 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-<<<<<<< HEAD
     <title>Apple TV+</title>
     <link
       rel="icon"
       href="https://tv.apple.com/assets/favicon/favicon-180-dcb7e297396806943a930ba83f20ea56.png"
       type="image/x-icon"
     />
+    <link rel="stylesheet" href="index.css" />
     <script
       src="https://kit.fontawesome.com/c610c7a2ec.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="index.css" />
   </head>
+
   <body>
+    <div id="navbar_landing" class="d-flex">
+      <div class="landing_navbar_logo">
+        <a href="#">
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATYAAACjCAMAAAA3vsLfAAAAb1BMVEUAAAD////8/PyFhYV8fHyZmZmSkpJ1dXXj4+O2traIiIiWlpZlZWX4+Pjl5eVvb2/w8PCvr6+kpKREREQrKysjIyO6urrR0dFPT09XV1fCwsJeXl6np6doaGgbGxtISEg6OjrY2NgWFhbLy8sxMTHlNfjuAAADaUlEQVR4nO3aa3OiMBiGYRBFhBbBVrQea+3//41r3oCGhLgz+0FXuK8POxDYDDyTmAMNAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/alt+PfsRXs9bEYbjZz/Ey9mFFx/PfopXM1GpvT/7KV7NUaUWls9+jFezUqmN7NIkz/Ni/ozneQ1LaWx7u1hKGSa8pioft1mNiO2uOAw3n24xsXkcPiSt5VH9ux5P2zMQYuuyLAs169jI2mB+ll+yUWW0Oolt+qzH+09lYaOYVe/XkzCVq+M0HUtssyhN00uy2zSKorRVgxRFxnm52/V9gbYJfRbqctEq2gXBXg7ezCpyVXK+nWe31Ptq4U0tDJeBHZtKUhrkzKji0562xOo8Cnrs6A+tOKgb3NhKdWCuv1JVYM6R+x/bypva6EffkCeJTjFJkjy+lKzl9GjVURmV9j62T39jM0ZOayQtmnZXk9vNEaD3saXe1HLjLmvetmhfn9qdtv+x+YfRzLjLiu1bbli26mhtmvQ+tpM3NrPT2asE+bGLW1dby4rex1Z4YzNzsGOTedmpPtmqk6JVa+9je/fGtjbusmPT+0v1yUwdT1q1xtb9vZN7YzOXoM5S/mQUSIP9vRxMGpksazfZ9fyBL/QY/mmbuQxwYotUgV5NfajDRB15q3J2i19e5X3X0LjL3Ti6pSGzkbgp69S/Lzr+eZvZ3NzYpBvKcl5GVZmMDCi2b39sRk5ubNMmWBkd9KDqr+mhr/QQ/hmIMTx27O6qIjXrMOYa08ZcBtdyfj1/6Bs9RHkntjCvd3g7YpMfxXU9ptqV9n7epgfCv/WujthkkrvTPfNsV9r/2HRz8WgWml2fYNREOQ/G6orTCQcQ2/ZObM1XGInN2uSW3n1Qy3h3WjaA2O40t+sURJZgVfu/ybZwrK5snCqHENuvL7VbK9Lbu9anKDUGSzPcOlUOITb9kh1uH6dmuiA5r4ye2ny76ZjMDiI2Tzc1Vglf10Jjp6NppR1/1TWM2DrnvCfzhk1HbHXXbe0w1QYS249OIJ/s1/OFznDVvqOZFRsfXurO3d6g1AbweVlLV6dZ02z21WrjTMUOUXk+nyvz5385ybJs4vwx3MU6TdP42HEBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwB1/AG28G3nJgE5MAAAAAElFTkSuQmCC"
+            alt="AppleLogo"
+        /></a>
+      </div>
+      <div class="landing_navbar_signin ml-5">
+        <button class="landing_navbar_button d-flex">
+          <div class="logo_sigin m-1">
+            <i class="fa-solid fa-user"></i>
+          </div>
+          <div class="logo_text m-1"><a href="signIn.html"></a></div>
+        </button>
+      </div>
+    </div>
+
+    <!-- first box -->
     <div class="head">
       <img
         src="https://is5-ssl.mzstatic.com/image/thumb/Features114/v4/1c/30/cc/1c30cc8f-0ead-1bdf-e01d-c6d0de6f892a/Q1NILVRWQS1XVy1BVFZfUGx1cy1UZWRfTGFzc28ucG5n.png/1679x945sr.jpg"
@@ -31,88 +56,26 @@
           Exclusively on Apple TV+. Watch here and on the Apple TV app across
           your devices.
         </h5>
-        <button>Start Free Trail</button>
+        <button>Start Free Trial</button>
         <p>7 days free, then $4.99/month.</p>
         <p>
           Or 3 months free when you buy an eligible Apple device. Terms apply.
           Some titles coming later to Apple TV+.
         </p>
-        <i class="fa-solid fa-angle-down"></i>
       </div>
     </div>
-=======
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
-  <link rel="stylesheet" href="index.css">
-  <title>Hello, world!</title>
-</head>
-<script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
 
-<body>
-  <div id="navbar_landing" class="d-flex">
-    <div class="landing_navbar_logo">
-      <a href="#"> <img
-          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATYAAACjCAMAAAA3vsLfAAAAb1BMVEUAAAD////8/PyFhYV8fHyZmZmSkpJ1dXXj4+O2traIiIiWlpZlZWX4+Pjl5eVvb2/w8PCvr6+kpKREREQrKysjIyO6urrR0dFPT09XV1fCwsJeXl6np6doaGgbGxtISEg6OjrY2NgWFhbLy8sxMTHlNfjuAAADaUlEQVR4nO3aa3OiMBiGYRBFhBbBVrQea+3//41r3oCGhLgz+0FXuK8POxDYDDyTmAMNAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/alt+PfsRXs9bEYbjZz/Ey9mFFx/PfopXM1GpvT/7KV7NUaUWls9+jFezUqmN7NIkz/Ni/ozneQ1LaWx7u1hKGSa8pioft1mNiO2uOAw3n24xsXkcPiSt5VH9ux5P2zMQYuuyLAs169jI2mB+ll+yUWW0Oolt+qzH+09lYaOYVe/XkzCVq+M0HUtssyhN00uy2zSKorRVgxRFxnm52/V9gbYJfRbqctEq2gXBXg7ezCpyVXK+nWe31Ptq4U0tDJeBHZtKUhrkzKji0562xOo8Cnrs6A+tOKgb3NhKdWCuv1JVYM6R+x/bypva6EffkCeJTjFJkjy+lKzl9GjVURmV9j62T39jM0ZOayQtmnZXk9vNEaD3saXe1HLjLmvetmhfn9qdtv+x+YfRzLjLiu1bbli26mhtmvQ+tpM3NrPT2asE+bGLW1dby4rex1Z4YzNzsGOTedmpPtmqk6JVa+9je/fGtjbusmPT+0v1yUwdT1q1xtb9vZN7YzOXoM5S/mQUSIP9vRxMGpksazfZ9fyBL/QY/mmbuQxwYotUgV5NfajDRB15q3J2i19e5X3X0LjL3Ti6pSGzkbgp69S/Lzr+eZvZ3NzYpBvKcl5GVZmMDCi2b39sRk5ubNMmWBkd9KDqr+mhr/QQ/hmIMTx27O6qIjXrMOYa08ZcBtdyfj1/6Bs9RHkntjCvd3g7YpMfxXU9ptqV9n7epgfCv/WujthkkrvTPfNsV9r/2HRz8WgWml2fYNREOQ/G6orTCQcQ2/ZObM1XGInN2uSW3n1Qy3h3WjaA2O40t+sURJZgVfu/ybZwrK5snCqHENuvL7VbK9Lbu9anKDUGSzPcOlUOITb9kh1uH6dmuiA5r4ye2ny76ZjMDiI2Tzc1Vglf10Jjp6NppR1/1TWM2DrnvCfzhk1HbHXXbe0w1QYS249OIJ/s1/OFznDVvqOZFRsfXurO3d6g1AbweVlLV6dZ02z21WrjTMUOUXk+nyvz5385ybJs4vwx3MU6TdP42HEBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwB1/AG28G3nJgE5MAAAAAElFTkSuQmCC"
-          alt="AppleLogo"></a>
-    </div>
-    <div class="landing_navbar_signin ml-5">
-      <button class="landing_navbar_button d-flex ">
-        <div class="logo_sigin m-1">
-          <i class="fa-solid fa-user"></i>
-        </div>
-        <div class="logo_text m-1"><a href="signIn.html"></a></div>
->>>>>>> master
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
 
-      </button>
-    </div>
-    <!-- <div class="landing_navbar_loggedIn dropdown hidden ml-5">
-      <button class="landing_navbar_button dropdown-toggle  d-flex landing_navbar_logout " type="button"
-        id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
-        <div class="logo_sigin m-1">
-          <i class="fa-solid fa-user icon_size_user"></i>
-        </div>
-        <div id="logged_user" class="logo_text m-1 pt-1" style="height:10px"></div>
-      </button>
-      <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
-        <li><a class="dropdown-item active" id="dropdown_logout_navbar" href="#">LogOut</a></li>
-       <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Separated link</a></li> -->
-    </ul>
-  </div> -->
-  <!-- ////////////////////////////////////////////////////////////////////////////////////// -->
-  <!-- <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle landing_navbar_button dropdown-toggle  d-flex landing_navbar_logout" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
-            <div class="logo_sigin m-1">
-                <i class="fa-solid fa-user icon_size_user"></i>
-            </div>
-            <div id="logged_user" class="logo_text m-1" style="height:10px"></div>
-        </button>
-        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
-          <li><a class="dropdown-item active" href="#">Action</a></li>
-          <li><a class="dropdown-item" href="#">Another action</a></li>
-          <li><a class="dropdown-item" href="#">Something else here</a></li>
-          <li><hr class="dropdown-divider"></li>
-          <li><a class="dropdown-item" href="#">Separated link</a></li>
-        </ul>
-      </div> -->
-  <!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
-  </div>
-
-  <!-- Optional JavaScript; choose one of the two! -->
-
-  <!-- Option 1: Bootstrap Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-  </script>
-
-  <!-- Option 2: Separate Popper and Bootstrap JS -->
-  <!--
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     -->
-</body>
-
+  </body>
 </html>
