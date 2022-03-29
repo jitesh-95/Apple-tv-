@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+.head {
+  border: 1px solid red;
+  position: relative;
+}
+.head > img {
+  width: 100%;
+}
+#innerhead {
+  position: absolute;
+  color: white;
+  top: 0;
+  margin-top: 500px;
+  text-align: center;
+  border: 1px solid;
+  width: 100%;
+}
+.innerhead > h1 {
+  font-size: 100px;
+}
