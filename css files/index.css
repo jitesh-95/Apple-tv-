@@ -3,9 +3,9 @@
 ::before {
   box-sizing: border-box;
 }
-.landing_navbar_logo {
-  width: 7%;
-  height: 12%;
+.landing_navbar_logo > img {
+  width: 22%;
+  height: 20%;
   /* border: 3px solid green; */
   /* margin: 5px; */
 }
@@ -14,9 +14,11 @@
   height: 6.5vh;
   background-color: black;
   justify-content: space-between;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding: 26px 45px;
   align-items: center;
+}
+.landing_navbar_logo {
+  cursor: pointer;
 }
 .landing_navbar_button {
   border: 0.5px;
@@ -30,10 +32,15 @@
 .d-flex {
   display: flex !important;
 }
-a {
+button {
+  text-decoration: none;
+}
+#logo {
   color: white;
+  text-decoration: none;
 }
 
+/* ============================================ */
 /* head */
 .head {
   position: relative;
@@ -72,8 +79,8 @@ a {
   cursor: pointer;
 }
 
+/* ============================================= */
 .best_picture {
-  margin-bottom: 500px;
   padding: 0px 40px 10px 40px;
 }
 .best_picture > h6 {
