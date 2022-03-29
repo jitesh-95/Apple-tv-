@@ -3,9 +3,9 @@
 ::before {
   box-sizing: border-box;
 }
-.landing_navbar_logo {
-  width: 7%;
-  height: 12%;
+img {
+  width: 22%;
+  height: 20%;
   /* border: 3px solid green; */
   /* margin: 5px; */
 }
@@ -14,25 +14,34 @@
   height: 6.5vh;
   background-color: black;
   justify-content: space-between;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding: 26px 45px;
   align-items: center;
 }
+.landing_navbar_logo{
+  cursor: pointer;
+}
 .landing_navbar_button {
-  border: 0.5px;
+  
+  border: 0.5px ;
   color: white;
   font-size: 13px;
   background-color: #007aff;
   border-radius: 5px;
   /* margin: 7px; */
   margin-left: 10px;
+
 }
 .d-flex {
-  display: flex !important;
+  display: flex!important;
 }
-a {
+button{
+text-decoration: none;
+}
+#logo{
   color: white;
+  text-decoration: none;
 }
+
 
 /* head */
 .head {
