@@ -384,3 +384,428 @@ $('.big_slides').slick({
     // instead of a settings object
   ]
 });
+
+var pageToScreen=[
+  {Image : "https://is1-ssl.mzstatic.com/image/thumb/Tb1jarRHaWN_SFiMjZcDHw/738x416.webp"},
+  {Image : "https://is4-ssl.mzstatic.com/image/thumb/Ro6cUnMcHLf3sEVL38YlRg/738x416.webp"},
+  {Image : "https://is2-ssl.mzstatic.com/image/thumb/8593WFOGVTTA1ncIGrL37g/738x416.webp"},
+  {Image : "https://is2-ssl.mzstatic.com/image/thumb/qYEYYvFXN2O4zEuCcBSbjw/738x416.webp"},
+  {Image : "https://is4-ssl.mzstatic.com/image/thumb/Iz8wdsRXYRysnRRCY0yMrA/738x416.webp"},
+  {Image : "https://is3-ssl.mzstatic.com/image/thumb/cyRvgYnPlaVn3rN2SDdW1Q/738x416.webp"},
+  {Image : "https://is1-ssl.mzstatic.com/image/thumb/oANBVngpEJDvHRhdyozySA/738x416.webp"},
+  {Image : "https://is2-ssl.mzstatic.com/image/thumb/vB48H4eBprLJ-WdCBTA6cw/738x416.webp"},
+  {Image : "https://is4-ssl.mzstatic.com/image/thumb/L4WNJNV3nbmyAL6MQSeGuw/738x416.webp"},
+  {Image : "https://is5-ssl.mzstatic.com/image/thumb/Cof8vC9vaCH-GYX6JltrQA/738x416.webp"},
+  {Image : "https://is3-ssl.mzstatic.com/image/thumb/D8bOyY8jg5hymGMxt1LSZg/738x416.webp"},
+  {Image : "https://is1-ssl.mzstatic.com/image/thumb/jRVuOiECbTmzx3HEVkbreA/738x416.webp"},
+  {Image : "https://is5-ssl.mzstatic.com/image/thumb/KdlcNbBUOtf7sUXH5z9N8A/738x416.webp"},
+];
+
+pageToScreen.map(function(elem){
+  var innerdiv = document.createElement("div");
+  var img = document.createElement("img");
+  img.src = elem.Image;
+  innerdiv.append(img)
+  innerdiv.setAttribute("class","pageToScreenData")
+  document.querySelector(".insidePageToScreen").append(innerdiv);
+})
+
+$('.insidePageToScreen').slick({
+  dots: false,
+  infinite: false,
+  speed: 650,
+  slidesToShow: 5,
+  slidesToScroll: 5,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+
+var ambitionAndDetermination=[
+  {Image : "https://is1-ssl.mzstatic.com/image/thumb/lN-bUPh0Botn7U7jKgbnFg/738x416.webp"},
+  {Image : "https://is3-ssl.mzstatic.com/image/thumb/AWDRdQz0nepFpnsUNiTDuw/738x416.webp"},
+  {Image : "https://is1-ssl.mzstatic.com/image/thumb/VXktJkcnADdcq8RjZVT_nw/738x416.webp"},
+  {Image : "https://is2-ssl.mzstatic.com/image/thumb/8593WFOGVTTA1ncIGrL37g/738x416.webp"},
+  {Image : "https://is2-ssl.mzstatic.com/image/thumb/SEsiWD2cTDShiJqUtRPAxg/738x416.webp"},
+  {Image : "https://is3-ssl.mzstatic.com/image/thumb/_VWBeTzPLn6LeyUjlTaSiQ/738x416.webp"},
+  {Image : "https://is4-ssl.mzstatic.com/image/thumb/vWs6dt5xDhG_DjIoc-89tA/738x416.webp"},
+  
+];
+
+ambitionAndDetermination.map(function(elem){
+  var innerdiv = document.createElement("div");
+  var img = document.createElement("img");
+  img.src = elem.Image;
+  innerdiv.append(img)
+  innerdiv.setAttribute("class","ambitionData")
+  document.querySelector(".innerAmbition").append(innerdiv);
+})
+
+$('.innerAmbition').slick({
+  dots: false,
+  infinite: false,
+  speed: 650,
+  slidesToShow: 5,
+  slidesToScroll: 5,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+
+var findingVoices=[
+  {Image : "https://is1-ssl.mzstatic.com/image/thumb/zRCSBlp0LjwClRXsjyDNYQ/738x416.webp"},
+  {Image : "https://is3-ssl.mzstatic.com/image/thumb/cyRvgYnPlaVn3rN2SDdW1Q/738x416.webp"},
+  {Image : "https://is3-ssl.mzstatic.com/image/thumb/3iAbZQ4pznOpDRenkvOhNA/738x416.webp"},
+  {Image : "https://is1-ssl.mzstatic.com/image/thumb/VXktJkcnADdcq8RjZVT_nw/738x416.webp"},
+  {Image : "https://is4-ssl.mzstatic.com/image/thumb/rZ34KsuVSjdutVP-0HO95A/738x416.webp"},
+  {Image : "https://is2-ssl.mzstatic.com/image/thumb/D1SCGzM1ESBh-SIkHwcvUQ/738x416.webp"},
+  {Image : "https://is3-ssl.mzstatic.com/image/thumb/_ODFuW8DJbcFSHL_yhHuVA/738x416.webp"},
+  {Image : "https://is5-ssl.mzstatic.com/image/thumb/Ru8FEVLXR20CLzgnt9UXOQ/738x416.webp"},
+  
+];
+
+findingVoices.map(function(elem){
+  var innerdiv = document.createElement("div");
+  var img = document.createElement("img");
+  img.src = elem.Image;
+  innerdiv.append(img)
+  innerdiv.setAttribute("class","findingVoicesData")
+  document.querySelector(".innerFindingVoices").append(innerdiv);
+})
+
+$('.innerFindingVoices').slick({
+  dots: false,
+  infinite: false,
+  speed: 650,
+  slidesToShow: 5,
+  slidesToScroll: 5,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+
+var conversationObj = [
+  {image : "https://is1-ssl.mzstatic.com/image/thumb/a99v9iRDYcIGof0CvxUUoA/1478x832.webp",
+  head : "COMEDY",
+  subhead : "The Problem With Jon Stewart",
+  description : "Jon Stewart brings people together to highlight solutions for a problem."},
+
+  {image : "https://is3-ssl.mzstatic.com/image/thumb/6MFkEmAhzwoAZfThq0xWHA/1478x832.webp",
+  head : "TALK SHOW",
+  subhead : "The Oprah Conversation",
+  description : "Intimate discussion with newsmakers, thought leaders, and masers of craft."},
+
+  {image : "https://is3-ssl.mzstatic.com/image/thumb/fS85BR5uGUlTFLXLAWAMsg/1478x832.webp",
+  head : "DOCUMENTRY",
+  subhead : "The Year Earth Changed",
+  description : "David Attenborough narrates an astonishing look to how lockdown set nature free."},
+
+  {image : "https://is5-ssl.mzstatic.com/image/thumb/uBU112xIP48X2tW5EbpGGQ/1478x832.webp",
+  head : "DOCUMENTRY",
+  subhead : "The Me You Can't See",
+  description : "Oprah and Prince Harry guide honest discussions about mental health."},
+
+  {image : "https://is3-ssl.mzstatic.com/image/thumb/izP6zMmzs-m3VCjcOvM-DQ/1478x832.webp",
+  head : "DOCUMENTRY",
+  subhead : "The Line",
+  description : "Dive into the biggest war crimes trial in a generation in this four-part docusries."},
+
+  {image : "https://is5-ssl.mzstatic.com/image/thumb/RMn-3IiFm6XMOJZT3tP8fA/1478x832.webp",
+  head : "DOCUMENTRY",
+  subhead : "Visible: Out of Television",
+  description : "Explore the history of LGBTQ movement through the lens of TV."},
+
+  {image : "https://is5-ssl.mzstatic.com/image/thumb/97liMx1hwAc7jcp5zDXp8Q/1478x832.webp",
+  head : "DOCUMENTRY",
+  subhead : "9/11: Inside the President's War Room",
+  description : "See the crisis unfold through the eyes of president and his closest advisors."},
+
+  {image : "https://is1-ssl.mzstatic.com/image/thumb/CwpcQl754x9lwddZ9TXqmQ/1478x832.webp",
+  head : "DOCUMENTRY",
+  subhead : "Fathom",
+  description : "Two marine biologists seek meaning in the beautifully hauntion sounds of whale."},
+
+  {image : "https://is1-ssl.mzstatic.com/image/thumb/VlRkLTAvxgEml_ZmCcmP1Q/1478x832.webp",
+  head : "DOCUMENTRY",
+  subhead : "1971: The Year That Music Changed Everything",
+  description : "A tumultuous era sparked a year of unprecedented musical innovation."},
+
+];
+
+conversationObj.map(function(elem){
+  var bigdiv = document.createElement("div");
+  bigdiv.setAttribute("class", "d-flex bigdiv");
+
+  var imagediv = document.createElement("div")
+  var img = document.createElement("img");
+  img.src = elem.image;
+  imagediv.append(img);
+  imagediv.setAttribute("class","imagediv");
+  
+  var details = document.createElement("div")
+  details.setAttribute("class","conversation_details")
+  var heading = document.createElement("p")
+  heading.innerText = elem.head;
+  heading.setAttribute("class","conversation_head")
+
+  var sub = document.createElement("p")
+  sub.innerText = elem.subhead;
+  var desc = document.createElement("p");
+  desc.innerText= elem.description;
+  desc.setAttribute("class", "conversation_head");
+
+  details.append(heading,sub,desc);
+
+  bigdiv.append(imagediv,details);
+
+  document.querySelector(".inside_conversation").append(bigdiv);
+});
+
+$('.inside_conversation').slick({
+  dots: false,
+  infinite: false,
+  speed: 650,
+  slidesToShow: 3,
+  slidesToScroll: 3,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+
+var powerOFfriendship=[
+  {Image : "https://is3-ssl.mzstatic.com/image/thumb/HGw-QzsXlYUDp68NCOvxZQ/738x416.webp"},
+  {Image : "https://is1-ssl.mzstatic.com/image/thumb/UtRuOihF2zNFPo4g5zUwdA/738x416.webp"},
+  {Image : "https://is5-ssl.mzstatic.com/image/thumb/owNSUO3F109RC75YDPMY7A/738x416.webp"},
+  {Image : "https://is2-ssl.mzstatic.com/image/thumb/2lfdtvo9bvduvVLrbcASow/738x416.webp"},
+  {Image : "https://is3-ssl.mzstatic.com/image/thumb/3J1XDMDhXrh-VCuraBUQJg/738x416.webp"},
+  {Image : "https://is4-ssl.mzstatic.com/image/thumb/RP47edx-hRW2rCun48Lx2w/738x416.webp"},
+  {Image : "https://is5-ssl.mzstatic.com/image/thumb/PsLk5RQuPoAqWJ-lVe1gLQ/738x416.webp"},
+  {Image : "https://is2-ssl.mzstatic.com/image/thumb/tvBkfH_Ojxnmaod8KMGs_g/738x416.webp"},
+  {Image : "https://is1-ssl.mzstatic.com/image/thumb/f2vtGOjht_s3h3tBMlDHSg/738x416.webp"},
+  {Image : "https://is1-ssl.mzstatic.com/image/thumb/AS1GpWWwwGwHxrXD7Sny5A/738x416.webp"},
+  
+];
+
+powerOFfriendship.map(function(elem){
+  var innerdiv = document.createElement("div");
+  var img = document.createElement("img");
+  img.src = elem.Image;
+  innerdiv.append(img)
+  innerdiv.setAttribute("class","friendshipData")
+  document.querySelector(".innerFriendship").append(innerdiv);
+})
+
+$('.innerFriendship').slick({
+  dots: false,
+  infinite: false,
+  speed: 650,
+  slidesToShow: 5,
+  slidesToScroll: 5,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+
+var dramaseries=[
+  {Image : "https://is1-ssl.mzstatic.com/image/thumb/lN-bUPh0Botn7U7jKgbnFg/738x416.webp"},
+  {Image : "https://is1-ssl.mzstatic.com/image/thumb/Tb1jarRHaWN_SFiMjZcDHw/738x416.webp"},
+  {Image : "https://is2-ssl.mzstatic.com/image/thumb/78-I7VenST4ztZYfwMf6AQ/738x416.webp"},
+  {Image : "https://is3-ssl.mzstatic.com/image/thumb/AWDRdQz0nepFpnsUNiTDuw/738x416.webp"},
+  {Image : "https://is3-ssl.mzstatic.com/image/thumb/kVTKGnVvCdFlB1sZeKa8YQ/738x416.webp"},
+  {Image : "https://is4-ssl.mzstatic.com/image/thumb/Ro6cUnMcHLf3sEVL38YlRg/738x416.webp"},
+  {Image : "https://is2-ssl.mzstatic.com/image/thumb/6tJakyTEtS0vrgdc9POZpg/738x416.webp"},
+  {Image : "https://is5-ssl.mzstatic.com/image/thumb/NHLksWLSZpTcIw36-n7vWA/738x416.webp"},
+  {Image : "https://is2-ssl.mzstatic.com/image/thumb/qYEYYvFXN2O4zEuCcBSbjw/738x416.webp"},
+  {Image : "https://is4-ssl.mzstatic.com/image/thumb/UPoQbHoPte_TFJXEvKIIsw/738x416.webp"},
+  {Image : "https://is4-ssl.mzstatic.com/image/thumb/AmQ1cNEzc1DMKH25B5J9aQ/738x416.webp"},
+  {Image : "https://is2-ssl.mzstatic.com/image/thumb/SEsiWD2cTDShiJqUtRPAxg/738x416.webp"},
+  {Image : "https://is2-ssl.mzstatic.com/image/thumb/vB48H4eBprLJ-WdCBTA6cw/738x416.webp"},
+  {Image : "https://is4-ssl.mzstatic.com/image/thumb/Iz8wdsRXYRysnRRCY0yMrA/738x416.webp"},
+  {Image : "https://is1-ssl.mzstatic.com/image/thumb/VXktJkcnADdcq8RjZVT_nw/738x416.webp"},
+  {Image : "https://is5-ssl.mzstatic.com/image/thumb/Cof8vC9vaCH-GYX6JltrQA/738x416.webp"},
+  {Image : "https://is5-ssl.mzstatic.com/image/thumb/Dulsu9pd-BdMQHgEvp2z_A/738x416.webp"},
+  {Image : "https://is1-ssl.mzstatic.com/image/thumb/yXhlXOFkS9yJ1kMmOhfIbg/738x416.webp"},
+  {Image : "https://is4-ssl.mzstatic.com/image/thumb/h8oGFN-jdPeHY8j3EM_WnQ/738x416.webp"},
+  {Image : "https://is4-ssl.mzstatic.com/image/thumb/EjmCDwq97jEEe9RuKY7aNw/738x416.webp"},
+  {Image : "https://is3-ssl.mzstatic.com/image/thumb/_ODFuW8DJbcFSHL_yhHuVA/738x416.webp"},
+  {Image : "https://is4-ssl.mzstatic.com/image/thumb/L4WNJNV3nbmyAL6MQSeGuw/738x416.webp"},
+  {Image : "https://is3-ssl.mzstatic.com/image/thumb/hMPxF7vkj44eqAbnFymHDQ/738x416.webp"},
+  {Image : "https://is1-ssl.mzstatic.com/image/thumb/mqP1mK0HzuFhIBXsd_Q_SA/738x416.webp"},
+  
+];
+
+dramaseries.map(function(elem){
+  var innerdiv = document.createElement("div");
+  var img = document.createElement("img");
+  img.src = elem.Image;
+  innerdiv.append(img)
+  innerdiv.setAttribute("class","dramaSeriesData")
+  document.querySelector(".innerDramaSeries").append(innerdiv);
+})
+
+$('.innerDramaSeries').slick({
+  dots: false,
+  infinite: false,
+  speed: 650,
+  slidesToShow: 5,
+  slidesToScroll: 5,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+
+$('.small_best_pictures').slick({
+  infinite: false,
+  slidesToShow: 4,
+  slidesToScroll: 3
+});

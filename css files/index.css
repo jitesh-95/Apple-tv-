@@ -104,7 +104,7 @@ button {
   box-shadow: rgba(0, 0, 0, 0.267) 0px 3px 8px;
 }
 .line {
-  width: 94%;
+  width: 93%;
   margin: auto;
 }
 .small_best_pictures > button {
@@ -157,8 +157,8 @@ button {
   cursor: pointer;
 }
 .imagediv {
-  width: 200px;
-  height: 120px;
+  width: 220px;
+  height: 130px;
   padding-bottom: 10px;
   padding-left: 10px;
 }
@@ -180,6 +180,7 @@ button {
 }
 .originals_head + p {
   font-size: 15px;
+  line-height: 20px;
   margin: -15px 0px 0px 0px;
 }
 .inside_latest > button {
@@ -264,3 +265,103 @@ button {
   background-color: rgba(230, 227, 227, 0.664);
   border-radius: 50%;
 }
+/* ================================================= */
+
+.page_to_screen,
+.ambition,
+.findingVoices,
+.friendship,
+.dramaSeries {
+  padding: 0px 35px 10px 45px;
+}
+.page_to_screen > h6,
+.ambition > h6,
+.findingVoices > h6,
+.friendship > h6,
+.dramaSeries > h6 {
+  line-height: 20px;
+  font-size: 17px;
+  font-weight: bolder;
+  margin-bottom: 15px;
+  color: #1f1f1fd8;
+}
+.pageToScreenData,
+.ambitionData,
+.findingVoicesData,
+.friendshipData,
+.dramaSeriesData {
+  width: 240px;
+  height: 135px;
+  margin-right: 20px;
+  padding: 0px 5px 10px 5px;
+  cursor: pointer;
+}
+.pageToScreenData > img,
+.ambitionData > img,
+.findingVoicesData > img,
+.friendshipData > img,
+.dramaSeriesData > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.267) 0px 3px 8px;
+}
+.insidePageToScreen > button,
+.innerAmbition > button,
+.innerFindingVoices > button,
+.innerFriendship > button,
+.innerDramaSeries > button {
+  background-color: rgba(230, 227, 227, 0.664);
+  border-radius: 50%;
+}
+/* ============================================= */
+
+.join_the_conversation {
+  padding: 0px 45px 10px 46px;
+}
+.join_the_conversation > h6 {
+  line-height: 20px;
+  font-size: 17px;
+  font-weight: bolder;
+  margin-bottom: 15px;
+  color: #1f1f1fd8;
+}
+.bigdiv {
+  width: 350px;
+  cursor: pointer;
+}
+.imagediv {
+  width: 220px;
+  height: 130px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+.imagediv > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  box-shadow: rgba(53, 52, 52, 0.521) 0px 3px 8px;
+}
+.conversation_details {
+  width: 200px;
+  height: 120px;
+  padding: 15px 0px 15px 20px;
+}
+.conversation_head {
+  font-size: 12px;
+  color: #838080de;
+  line-height: 15px;
+}
+.conversation_head + p {
+  font-size: 15px;
+  line-height: 20px;
+  margin: -15px 0px 0px 0px;
+}
+.inside_conversation > button {
+  background-color: rgba(230, 227, 227, 0.664);
+  border-radius: 50%;
+}
+/* ===================================================== */
+
+/* pachinko is here's CSS is same as best picture coda's CSS  */
+/* ======================================================== */
