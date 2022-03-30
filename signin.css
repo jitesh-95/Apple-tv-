@@ -1,0 +1,78 @@
+body {
+    background: url(signin.png);
+}
+*{
+    box-sizing: border-box;
+}
+
+.signin_box_hidden {
+    /* background-color: yellow; */
+    width: 55%;
+    height:550px;
+    /* border: 3px solid red; */
+    background-color: white;
+    margin: auto;
+    margin-top: 2%;
+    border-radius: 10px;
+    /* z-index: +1; */
+    position: absolute;
+    margin-left: 22.5%;
+    border-top: 10px;
+    overflow: hidden;
+}
+.cross_button_1{
+    color: rgb(155, 163, 163);
+    size: 10px;
+    background-color: white;
+    padding: 20px;
+    border: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    margin: auto;
+}
+.signin_container{
+    height: 450px;
+    width: 60%;
+    text-align: center;
+    margin: auto;
+    margin-top: px;
+}
+.apple-logo{
+    height: 100px;
+    width: 50%;
+  
+    margin: auto;
+}
+.apple-logo > img{
+    height: 65px;
+    width: 45%;
+}
+.appleid{
+    line-height: 40px;
+}
+.input-group{
+    
+    width: 70%;
+    margin: auto;
+    margin-top: 40px;
+}
+.signin_container_links{
+    margin-top: 120px;  
+}
+.margin_signin_container_links_1 > a{
+    text-decoration: none;
+}
+/* .signin_termscondition {
+    width: 50%;
+    height: 70vh;
+    background-color: white;
+    margin: auto;
+    margin-top: 5%;
+    border-radius: 10px;
+    border-top: 10px;
+    z-index: +1;
+    position: absolute;
+    margin-left: 25%;
+    border-top: 10px;
+    overflow: hidden;
+} */
