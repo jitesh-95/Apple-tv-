@@ -68,6 +68,7 @@ button {
   border: none;
   margin-top: 20px;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 #innerhead > p {
   font-size: 12px;
@@ -87,7 +88,7 @@ button {
   font-weight: bolder;
   font-size: 17px;
   margin-bottom: 0px;
-  color: #3b3b3b;
+  color: #1f1f1fd8;
 }
 .best_picture > p {
   font-size: 15px;
@@ -96,8 +97,170 @@ button {
 }
 .picture {
   padding: 5px 10px 8px 4px;
+  cursor: pointer;
 }
 .picture > img {
   border-radius: 15px;
   box-shadow: rgba(0, 0, 0, 0.267) 0px 3px 8px;
+}
+.line {
+  width: 94%;
+  margin: auto;
+}
+.small_best_pictures > button {
+  background-color: rgba(230, 227, 227, 0.664);
+  border-radius: 50%;
+}
+
+/* =================================== */
+.seasons {
+  padding: 0px 35px 10px 40px;
+}
+.seasons > h6 {
+  line-height: 20px;
+  font-size: 17px;
+  font-weight: bolder;
+  margin-bottom: 15px;
+  color: #1f1f1fd8;
+}
+.inner_seasons {
+  width: 240px;
+  height: 135px;
+  margin-right: 20px;
+  padding: 0px 5px 10px 5px;
+  cursor: pointer;
+}
+.inner_seasons > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.267) 0px 3px 8px;
+}
+.all_seasons_div > button {
+  background-color: rgba(230, 227, 227, 0.664);
+  border-radius: 50%;
+}
+
+/* ============================================== */
+.latest_originals {
+  padding: 0px 45px 10px 46px;
+}
+.latest_originals > h6 {
+  line-height: 20px;
+  font-size: 17px;
+  font-weight: bolder;
+  margin-bottom: 15px;
+  color: #1f1f1fd8;
+}
+.bigdiv {
+  width: 350px;
+  cursor: pointer;
+}
+.imagediv {
+  width: 200px;
+  height: 120px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+.imagediv > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.267) 0px 3px 8px;
+}
+.latest_details {
+  width: 200px;
+  height: 120px;
+  padding: 15px 0px 15px 20px;
+}
+.originals_head {
+  font-size: 12px;
+  color: #838080de;
+  line-height: 15px;
+}
+.originals_head + p {
+  font-size: 15px;
+  margin: -15px 0px 0px 0px;
+}
+.inside_latest > button {
+  background-color: rgba(230, 227, 227, 0.664);
+  border-radius: 50%;
+}
+
+/* ================================================ */
+.coming_soon {
+  padding: 0px 45px 10px 46px;
+}
+.coming_soon > h6 {
+  font-weight: bolder;
+  font-size: 17px;
+  margin-bottom: 0px;
+  color: #1f1f1fd8;
+}
+.coming_soon > p {
+  font-size: 15px;
+  line-height: 22px;
+  color: #989898;
+}
+.comingSoonData {
+  width: 300px;
+  height: 170px;
+  border-radius: 15px;
+  position: relative;
+  cursor: pointer;
+  margin-right: 20px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+}
+.comingSoonData > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.267) 0px 3px 8px;
+}
+.comingSoonData > p {
+  top: 0;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  color: white;
+  margin-top: 140px;
+  font-size: 13px;
+}
+.inner_coming_soon > button {
+  background-color: rgba(230, 227, 227, 0.664);
+  border-radius: 50%;
+}
+/* ========================================================== */
+
+.big_slides {
+  width: 93%;
+  margin: auto;
+  margin-top: 30px;
+}
+.innerBigSlides {
+  position: relative;
+  padding-bottom: 8px;
+  margin-right: 8px;
+  margin-left: 8px;
+}
+.innerBigSlides > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.267) 0px 3px 8px;
+}
+.innerBigSlides > p {
+  top: 0;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  color: white;
+  margin-top: 420px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.big_slides > button {
+  background-color: rgba(230, 227, 227, 0.664);
+  border-radius: 50%;
 }
