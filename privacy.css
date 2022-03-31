@@ -15,17 +15,22 @@ body{
     width: 95%;
     margin: auto;
 }
-.cross_button_1{
+i{
+    colour: rgb(117, 113, 113);
+    padding: 20px;
+}
+/* .cross_button_1{
     text-decoration: none;
     color: rgb(106, 112, 112);
     size: 10px;
-    background-color: white;
+    background-color: 
+    ;
     padding: 10px;
     border: none;
     box-sizing: border-box;
     text-decoration: none;
     margin: auto;
-}
+} */
 .applelogo{
     margin: auto;
     
