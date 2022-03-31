@@ -94,10 +94,14 @@ button {
   font-size: 15px;
   line-height: 22px;
   color: #989898;
+  margin-bottom: 10px;
 }
 .picture {
   padding: 5px 10px 8px 4px;
   cursor: pointer;
+}
+.picture:hover {
+  filter: contrast(70%);
 }
 .picture > img {
   border-radius: 15px;
@@ -117,7 +121,7 @@ button {
   padding: 0px 35px 10px 40px;
 }
 .seasons > h6 {
-  line-height: 20px;
+  line-height: 15px;
   font-size: 17px;
   font-weight: bolder;
   margin-bottom: 15px;
@@ -129,6 +133,9 @@ button {
   margin-right: 20px;
   padding: 0px 5px 10px 5px;
   cursor: pointer;
+}
+.inner_seasons:hover {
+  filter: contrast(70%);
 }
 .inner_seasons > img {
   width: 100%;
@@ -161,6 +168,9 @@ button {
   height: 130px;
   padding-bottom: 10px;
   padding-left: 10px;
+}
+.imagediv:hover {
+  filter: contrast(70%);
 }
 .imagediv > img {
   width: 100%;
@@ -202,6 +212,7 @@ button {
   font-size: 15px;
   line-height: 22px;
   color: #989898;
+  margin-bottom: 10px;
 }
 .comingSoonData {
   width: 300px;
@@ -212,6 +223,9 @@ button {
   margin-right: 20px;
   padding-bottom: 8px;
   padding-left: 5px;
+}
+.comingSoonData:hover {
+  filter: contrast(70%);
 }
 .comingSoonData > img {
   width: 100%;
@@ -245,6 +259,9 @@ button {
   margin-right: 8px;
   margin-left: 8px;
 }
+.innerBigSlides:hover {
+  filter: contrast(80%);
+}
 .innerBigSlides > img {
   width: 100%;
   height: 100%;
@@ -266,20 +283,29 @@ button {
   border-radius: 50%;
 }
 /* ================================================= */
+/* 5 slides  */
 
 .page_to_screen,
 .ambition,
 .findingVoices,
 .friendship,
-.dramaSeries {
+.dramaSeries,
+.all_feature_film,
+.all_comedy_series,
+.all_nonfiction,
+.fun_for_all {
   padding: 0px 35px 10px 45px;
 }
 .page_to_screen > h6,
 .ambition > h6,
 .findingVoices > h6,
 .friendship > h6,
-.dramaSeries > h6 {
-  line-height: 20px;
+.dramaSeries > h6,
+.all_feature_film > h6,
+.all_comedy_series > h6,
+.all_nonfiction > h6,
+.fun_for_all > h6 {
+  line-height: 15px;
   font-size: 17px;
   font-weight: bolder;
   margin-bottom: 15px;
@@ -289,18 +315,37 @@ button {
 .ambitionData,
 .findingVoicesData,
 .friendshipData,
-.dramaSeriesData {
+.dramaSeriesData,
+.featureFilmData,
+.comedySeriesData,
+.nonfictionData,
+.funForAllData {
   width: 240px;
   height: 135px;
   margin-right: 20px;
   padding: 0px 5px 10px 5px;
   cursor: pointer;
 }
+.pageToScreenData:hover,
+.ambitionData:hover,
+.findingVoicesData:hover,
+.friendshipData:hover,
+.dramaSeriesData:hover,
+.featureFilmData:hover,
+.comedySeriesData:hover,
+.nonfictionData:hover,
+.funForAllData:hover {
+  filter: contrast(70%);
+}
 .pageToScreenData > img,
 .ambitionData > img,
 .findingVoicesData > img,
 .friendshipData > img,
-.dramaSeriesData > img {
+.dramaSeriesData > img,
+.featureFilmData > img,
+.comedySeriesData > img,
+.nonfictionData > img,
+.funForAllData > img {
   width: 100%;
   height: 100%;
   border-radius: 10px;
@@ -310,11 +355,59 @@ button {
 .innerAmbition > button,
 .innerFindingVoices > button,
 .innerFriendship > button,
-.innerDramaSeries > button {
+.innerDramaSeries > button,
+.innerFeatureFilm > button,
+.innerComedySeries > button,
+.innerNonfiction > button,
+.innerFunForAll > button {
   background-color: rgba(230, 227, 227, 0.664);
   border-radius: 50%;
 }
 /* ============================================= */
+/* invasion  */
+.invasion {
+  position: relative;
+  margin-top: 15px;
+  height: 600px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.invasion > video {
+  min-width: 100%;
+}
+
+.innerInvasion {
+  position: absolute;
+  top: 0;
+  margin-top: 230px;
+  padding: 0px 35px 0px 45px;
+  color: white;
+}
+.innerInvasion > p {
+  width: 400px;
+  color: rgba(255, 255, 255, 0.658);
+  line-height: 20px;
+}
+.invasionData {
+  width: 190px;
+  height: 110px;
+  margin-right: 20px;
+}
+.invasionData:hover {
+  filter: contrast(70%);
+}
+.invasionData > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.sliderBox {
+  display: flex;
+  margin-top: 126px;
+}
+
+/* ================================================ */
 
 .join_the_conversation {
   padding: 0px 45px 10px 46px;
@@ -362,6 +455,148 @@ button {
   border-radius: 50%;
 }
 /* ===================================================== */
+/* 4 slides  */
 
-/* pachinko is here's CSS is same as best picture coda's CSS  */
+.big_pachinko,
+.amazing_planet,
+.kids_family {
+  padding: 0px 40px 10px 40px;
+}
+.big_pachinko > h6,
+.amazing_planet > h6,
+.kids_family > h6 {
+  font-weight: bolder;
+  font-size: 17px;
+  margin-bottom: 0px;
+  color: #1f1f1fd8;
+}
+.big_pachinko > p,
+.amazing_planet > p,
+.kids_family > p {
+  font-size: 15px;
+  line-height: 22px;
+  color: #989898;
+  margin-bottom: 10px;
+}
+.pachinko_picture,
+.planet_picture,
+.kidFamily_picture {
+  padding: 5px 10px 8px 4px;
+  cursor: pointer;
+}
+.pachinko_picture:hover,
+.planet_picture:hover,
+.kidFamily_picture:hover {
+  filter: contrast(70%);
+}
+.pachinko_picture > img,
+.planet_picture > img,
+.kidFamily_picture > img {
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.267) 0px 3px 8px;
+}
+.small_pachinko > button,
+.small_amazing_planet > button,
+.small_kid_family > button {
+  background-color: rgba(230, 227, 227, 0.664);
+  border-radius: 50%;
+}
 /* ======================================================== */
+/* black box  */
+
+.black_box {
+  background-color: black;
+  margin-top: 10px;
+  text-align: center;
+  color: #ebebeb;
+  padding: 2%;
+}
+.appletvlogo {
+  margin-top: 21px;
+}
+.black_box > h1 {
+  line-height: 40px;
+  font-size: 45px;
+  margin: 20px 0px 30px 0px;
+}
+.black_box > h5 {
+  width: 820px;
+  letter-spacing: 1px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.black_box > a {
+  text-decoration: none;
+  color: #2281e6;
+  font-size: 14px;
+}
+.fa-solid {
+  margin-left: 6px;
+  font-size: 11px;
+}
+.devices {
+  margin-top: 20px;
+  padding: 0px 200px 0px 200px;
+  display: flex;
+  justify-content: space-evenly;
+}
+#apple {
+  margin-top: 8px;
+  cursor: pointer;
+}
+#iphone {
+  margin-bottom: 6px;
+  cursor: pointer;
+}
+#ipad {
+  margin-bottom: 18px;
+  cursor: pointer;
+}
+#mac {
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+#airplay {
+  margin-top: 6px;
+  cursor: pointer;
+}
+.black_box > h4 {
+  letter-spacing: 1px;
+  font-weight: bolder;
+  margin-bottom: 5px;
+}
+.consoles {
+  display: flex;
+  margin-top: 15px;
+  justify-content: space-evenly;
+  padding: 0px 120px 0px 120px;
+}
+#gaming {
+  margin-bottom: 50px;
+}
+.black_box > p {
+  font-size: 11px;
+  margin-top: 5px;
+}
+/* ======================================== */
+.footer {
+  height: 80px;
+}
+.footer {
+  padding: 15px 40px 5px 40px;
+  font-size: 11px;
+}
+.footer1 {
+  display: flex;
+  justify-content: space-between;
+  color: #8f8e8e;
+}
+.footer1 > button {
+  border: none;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+.footer2 {
+  color: #383737;
+  cursor: pointer;
+}
