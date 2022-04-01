@@ -1,291 +1,465 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    <script src="https://fonts.googleapis.com/css?family=Open+Sans:800&display=swap"></script>
-    <link rel ="stylesheet" href = "style.css"/> 
-    <!-- <script type="text/javascript">
-        var span = document.getElementsByTagName('span');
-        var div = document.getElementsByClassName("carousel1") 
-        var l = 0;
-        span[1].onclick = () =>{
-            l++;
-            for(var i of div)
-            {
-                if(l==0) {i.style.left = "0px";}
-                if(l==1) {i.style.left = "-740px";}
-                if(l==2) {i.style.left = "-1480px";}
-                if(l==3) {i.style.left = "-2220px";}
-                if(l==4) {i.style.left = "-2960px";}
-                if (l>4) {l=4;}
-            }
-        }
-        span[0].onclick = () =>{
-            l--;
-            for(var i of div)
-            {
-                if(l==0) {i.style.left = "0px";}
-                if(l==1) {i.style.left = "-740px";}
-                if(l==2) {i.style.left = "-1480px";}
-                if(l==3) {i.style.left = "-2220px";}
-                if(l==4) {i.style.left = "-2960px";}
-                if (l<0) {l=0;}
-            }
-        }
-    </script> -->
-    <script type="text/javascript" src="myscript.js">
-    </script>
-    
-</head>
-<header>
-    <div class="nav-header__wrapper">
-        <div class="nav-header__bg ">
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pinecone & Pony | Apple TV+</title>
+    <link
+      rel="icon"
+      href="https://tv.apple.com/assets/favicon/favicon-180-dcb7e297396806943a930ba83f20ea56.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./css files/ponycartoon.css" />
+    <script
+      src="https://kit.fontawesome.com/c610c7a2ec.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="nav-header__wrapper">
+        <div class="nav-header__bg"></div>
         <div class="nav-header__content">
-            <button class="mobile-nav-button" aria-owns="global-navigation" aria-label="Open Navigation" aria-expanded="false" type="button">
-                <span class="mobile-nav-bread mobile-nav-bread--top">
-                    <span class="mobile-nav-bread-crust mobile-nav-bread-crust--top"></span>
-                </span>
-                <span class="mobile-nav-bread mobile-nav-bread--bottom">
-                    <span class="mobile-nav-bread-crust mobile-nav-bread-crust--bottom"></span>
-                </span>
+          <button
+            class="mobile-nav-button"
+            aria-owns="global-navigation"
+            aria-label="Open Navigation"
+            aria-expanded="false"
+            type="button"
+          >
+            <span class="mobile-nav-bread mobile-nav-bread--top">
+              <span
+                class="mobile-nav-bread-crust mobile-nav-bread-crust--top"
+              ></span>
+            </span>
+            <span class="mobile-nav-bread mobile-nav-bread--bottom">
+              <span
+                class="mobile-nav-bread-crust mobile-nav-bread-crust--bottom"
+              ></span>
+            </span>
+          </button>
+          <a
+            class="nav-header__logo nav-header__tv-plus-logo"
+            aria-label="Apple&nbsp;TV&nbsp;Plus"
+            href="https://tv.apple.com/"
+          >
+          </a>
+          <div class="nav-header__nav-container">
+            <nav class="nav-header__nav" id="global-navigation"></nav>
+          </div>
+
+          <div class="nav-header__user-controls">
+            <button
+              class="commerce-button"
+              data-metrics-click='{"actionType":"navigate", "targetType":"button", "targetId":"SignIn"}'
+              type="button"
+            >
+              <svg
+                height="11"
+                width="10"
+                viewBox="0 0 10 11"
+                xmlns="http://www.w3.org/2000/svg"
+                class="commerce-button__avatar"
+                role="presentation"
+              >
+                <path
+                  d="M5 5.295c-1.296 0-2.385-1.176-2.385-2.678C2.61 1.152 3.716 0 5 0c1.29 0 2.39 1.128 2.39 2.611C7.39 4.12 6.297 5.295 5 5.295zM1.314 11C.337 11 0 10.698 0 10.144c0-1.55 1.929-3.685 5-3.685 3.065 0 5 2.135 5 3.685 0 .554-.337.856-1.314.856z"
+                  fill="#fff"
+                ></path>
+              </svg>
+              Sign In
             </button>
-                        <a class="nav-header__logo nav-header__tv-plus-logo" aria-label="Apple&nbsp;TV&nbsp;Plus" href="https://tv.apple.com/">
-                        </a>
-           <div class="nav-header__nav-container">
-                <nav class="nav-header__nav" id="global-navigation">
-                </nav>
-            </div>
-
-            <div class="nav-header__user-controls">
-                    <button class="commerce-button" data-metrics-click="{&quot;actionType&quot;:&quot;navigate&quot;, &quot;targetType&quot;:&quot;button&quot;, &quot;targetId&quot;:&quot;SignIn&quot;}" type="button">
-                        <svg height="11" width="10" viewBox="0 0 10 11" xmlns="http://www.w3.org/2000/svg" class="commerce-button__avatar" role="presentation"><path d="M5 5.295c-1.296 0-2.385-1.176-2.385-2.678C2.61 1.152 3.716 0 5 0c1.29 0 2.39 1.128 2.39 2.611C7.39 4.12 6.297 5.295 5 5.295zM1.314 11C.337 11 0 10.698 0 10.144c0-1.55 1.929-3.685 5-3.685 3.065 0 5 2.135 5 3.685 0 .554-.337.856-1.314.856z" fill="#fff"></path></svg>
-                        Sign In
-                    </button>
-            </div>
-        </div>
-    </div>
-    
-</header>
-<body>
-     <!-- badi wali image ka div -->
-    <div >
-    
-        <img src = "https://is1-ssl.mzstatic.com/image/thumb/ys_gG2giBIRrSKDrPQ3Edg/1679x945sr.webp"  alt = ""  style="width: 100%"/>
-    </div> 
-    <div class="lower_section">
-    <!-- trailers -->
-    <h4>Trailers</h4>
-    <div class="lockup-overlay__playback__full-hit-area">
-        <img src = "https://i.ytimg.com/vi/qIinnh1TYio/mqdefault.jpg"/>
-        <p style="font-size: 13px;">Warrior</p>
-    </div>
-
-    
-<hr>
-    <!-- related -->
-
-    <!-- <div class="container">
-        <h1>Use Bootstrap 3's carousel to show multiple items per slide.</h1>
-        <div class="row">
-          <div class="col-md-12">
-            <div class="carousel slide multi-item-carousel" id="theCarousel">
-              <div class="carousel-inner">
-                <div class="item active">
-                  <div class="col-xs-4"><a href="#1"><img src="https://source.unsplash.com/300x300/?perth,australia" class="img-responsive"></a></div>
-                </div>
-                <div class="item">
-                  <div class="col-xs-4"><a href="#1"><img src="https://source.unsplash.com/300x300/?fremantle,australia" class="img-responsive"></a></div>
-                </div>
-                <div class="item">
-                  <div class="col-xs-4"><a href="#1"><img src="https://source.unsplash.com/300x300/?west-australia" class="img-responsive"></a></div>
-                </div>
-                <div class="item">
-                  <div class="col-xs-4"><a href="#1"><img src="https://source.unsplash.com/300x300/?perth" class="img-responsive"></a></div>
-                </div>
-                <div class="item">
-                  <div class="col-xs-4"><a href="#1"><img src="https://source.unsplash.com/300x300/?quokka,perth" class="img-responsive"></a></div>
-                </div>
-                <div class="item">
-                  <div class="col-xs-4"><a href="#1"><img src="https://source.unsplash.com/300x300/?margaretriver,australia" class="img-responsive"></a></div>
-                </div>
-                <div class="item">
-                  <div class="col-xs-4"><a href="#1"><img src="https://source.unsplash.com/300x300/?perth,australia&r=7" class="img-responsive"></a></div>
-                </div>
-              </div>
-              <a class="left carousel-control" href="#theCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
-              <a class="right carousel-control" href="#theCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
-            </div>
           </div>
         </div>
-    </div> -->
-
+      </div>
+    </header>
+    <!-- badi wali image ka div -->
     <div>
-        <h4>Related</h4>
-        <!-- <div class = "related_pics" >
-            <img class="img_class1" src = "https://is2-ssl.mzstatic.com/image/thumb/GT66HoV8VJL1IZwaqos_TQ/738x416.webp" height="150px" width="300px" alt = ""/>
-            <img class="img_class1" src = "https://is3-ssl.mzstatic.com/image/thumb/AWDRdQz0nepFpnsUNiTDuw/738x416.webp" height="150px" width="300px" alt = ""/>
-            <img class="img_class1" src = "https://is4-ssl.mzstatic.com/image/thumb/UPoQbHoPte_TFJXEvKIIsw/738x416.webp" height="150px" width="300px" alt = ""/>
-            <img src = "https://is2-ssl.mzstatic.com/image/thumb/qYEYYvFXN2O4zEuCcBSbjw/738x416.webp" height="150px" width="300px" alt = ""/>
-        </div>  -->
+      <img
+        src="https://is1-ssl.mzstatic.com/image/thumb/ys_gG2giBIRrSKDrPQ3Edg/1679x945sr.webp"
+        alt=""
+        style="width: 100%"
+      />
+    </div>
+    <div class="lower_section">
+      <!-- trailers -->
+      <h4>Trailers</h4>
+      <div class="lockup-overlay__playback__full-hit-area">
+        <img src="https://i.ytimg.com/vi/qIinnh1TYio/mqdefault.jpg" />
+        <p style="font-size: 13px">Warrior</p>
+      </div>
 
-<div class="img-slider__container-1">
-    <div class="slide">
-        <a href="https://tv.apple.com/us/show/ted-lasso/umc.cmc.vtoh0mn0xn7t3c643xqonfzy" target="_blank"><img class="img_class1" src = "https://is2-ssl.mzstatic.com/image/thumb/GT66HoV8VJL1IZwaqos_TQ/738x416.webp" height="150px" width="300px" alt = ""/></a>
-	</div>
-	<div class="slide">
-        <a href="https://tv.apple.com/us/show/the-morning-show/umc.cmc.25tn3v8ku4b39tr6ccgb8nl6m" target="_blank"><img class="img_class1" src = "https://is3-ssl.mzstatic.com/image/thumb/AWDRdQz0nepFpnsUNiTDuw/738x416.webp" height="150px" width="300px" alt = ""/></a>
-	</div>
-	<div class="slide">
-        <a href="https://tv.apple.com/us/show/see/umc.cmc.3s4mgg2y7h95fks9gnc4pw13m"><img class="img_class1" src = "https://is4-ssl.mzstatic.com/image/thumb/UPoQbHoPte_TFJXEvKIIsw/738x416.webp" height="150px" width="300px" alt = ""/></a>
-	</div>
-	<div class="slide">
-        <a href="https://tv.apple.com/us/show/foundation/umc.cmc.5983fipzqbicvrve6jdfep4x3"><img class="img_class1" src = "https://is2-ssl.mzstatic.com/image/thumb/qYEYYvFXN2O4zEuCcBSbjw/738x416.webp" height="150px" width="300px" alt = ""/></a>
-	</div>
-	<div class="slide">
-        <a href="https://tv.apple.com/us/movie/greyhound/umc.cmc.o5z5ztufuu3uv8lx7m0jcega"><img class="img_class1" src = "https://is1-ssl.mzstatic.com/image/thumb/oANBVngpEJDvHRhdyozySA/738x416.webp" height="150px" width="300px" alt = ""/> </a>   
-    </div>
-    <div class="slide">
-        <a href="https://tv.apple.com/us/movie/the-tragedy-of-macbeth/umc.cmc.4wpfk1xmi22h3zyv4a10lj1tw"><img class="img_class1" src = "https://is2-ssl.mzstatic.com/image/thumb/8593WFOGVTTA1ncIGrL37g/738x416.webp" height="150px" width="300px" alt = ""/></a>   
-     </div>
-    <div class="slide">
-        <a href="https://tv.apple.com/us/show/invasion/umc.cmc.70b7z97fv7azfzn5baqnj88p6"><img class="img_class1" src = "https://is5-ssl.mzstatic.com/image/thumb/NHLksWLSZpTcIw36-n7vWA/738x416.webp" height="150px" width="300px" alt = ""/></a>    
-    </div>
-    <div class="slide">
-        <a href="https://tv.apple.com/us/movie/finch/umc.cmc.47dkj9f2ho3h8dwxixflz65q5"><img class="img_class1" src = "https://is3-ssl.mzstatic.com/image/thumb/xwiVfxV1l5Tfy6-1uQ25_Q/738x416.webp" height="150px" width="300px" alt = ""/></a>   
-    </div>
-    <div class="slide">
-        <a href="https://tv.apple.com/us/show/the-shrink-next-door/umc.cmc.jov1gljmqnux0i15rbqsoyfk"><img class="img_class1" src = "https://is2-ssl.mzstatic.com/image/thumb/SEsiWD2cTDShiJqUtRPAxg/738x416.webp" height="150px" width="300px" alt = ""/></a>   
-    </div>
-    <div class="slide">
-        <a href="https://tv.apple.com/us/show/the-problem-with-jon-stewart/umc.cmc.4fcexvzqezr25p9weks6sxpob"><img class="img_class1" src = "https://is1-ssl.mzstatic.com/image/thumb/a99v9iRDYcIGof0CvxUUoA/738x416.webp" height="150px" width="300px" alt = ""/></a>   
-    </div>
-    <div class="slide">
-        <a href="https://tv.apple.com/us/show/the-oprah-conversation/umc.cmc.49yt85r7ow6904u0177r694qy"><img class="img_class1" src = "https://is3-ssl.mzstatic.com/image/thumb/6MFkEmAhzwoAZfThq0xWHA/738x416.webp" height="150px" width="300px" alt = ""/></a>   
-    </div>
-</div>
-<hr>
-    <div>
+      <hr />
+
+      <h4>Related</h4>
+
+      <div class="img-slider__container-1">
+        <div class="slide">
+          <a
+            href="https://tv.apple.com/us/show/ted-lasso/umc.cmc.vtoh0mn0xn7t3c643xqonfzy"
+            target="_blank"
+            ><img
+              class="img_class1"
+              src="https://is2-ssl.mzstatic.com/image/thumb/GT66HoV8VJL1IZwaqos_TQ/738x416.webp"
+              height="150px"
+              width="300px"
+              alt=""
+          /></a>
+        </div>
+        <div class="slide">
+          <a
+            href="https://tv.apple.com/us/show/the-morning-show/umc.cmc.25tn3v8ku4b39tr6ccgb8nl6m"
+            target="_blank"
+            ><img
+              class="img_class1"
+              src="https://is3-ssl.mzstatic.com/image/thumb/AWDRdQz0nepFpnsUNiTDuw/738x416.webp"
+              height="150px"
+              width="300px"
+              alt=""
+          /></a>
+        </div>
+        <div class="slide">
+          <a
+            href="https://tv.apple.com/us/show/see/umc.cmc.3s4mgg2y7h95fks9gnc4pw13m"
+            ><img
+              class="img_class1"
+              src="https://is4-ssl.mzstatic.com/image/thumb/UPoQbHoPte_TFJXEvKIIsw/738x416.webp"
+              height="150px"
+              width="300px"
+              alt=""
+          /></a>
+        </div>
+        <div class="slide">
+          <a
+            href="https://tv.apple.com/us/show/foundation/umc.cmc.5983fipzqbicvrve6jdfep4x3"
+            ><img
+              class="img_class1"
+              src="https://is2-ssl.mzstatic.com/image/thumb/qYEYYvFXN2O4zEuCcBSbjw/738x416.webp"
+              height="150px"
+              width="300px"
+              alt=""
+          /></a>
+        </div>
+        <div class="slide">
+          <a
+            href="https://tv.apple.com/us/movie/greyhound/umc.cmc.o5z5ztufuu3uv8lx7m0jcega"
+            ><img
+              class="img_class1"
+              src="https://is1-ssl.mzstatic.com/image/thumb/oANBVngpEJDvHRhdyozySA/738x416.webp"
+              height="150px"
+              width="300px"
+              alt=""
+            />
+          </a>
+        </div>
+        <div class="slide">
+          <a
+            href="https://tv.apple.com/us/movie/the-tragedy-of-macbeth/umc.cmc.4wpfk1xmi22h3zyv4a10lj1tw"
+            ><img
+              class="img_class1"
+              src="https://is2-ssl.mzstatic.com/image/thumb/8593WFOGVTTA1ncIGrL37g/738x416.webp"
+              height="150px"
+              width="300px"
+              alt=""
+          /></a>
+        </div>
+        <div class="slide">
+          <a
+            href="https://tv.apple.com/us/show/invasion/umc.cmc.70b7z97fv7azfzn5baqnj88p6"
+            ><img
+              class="img_class1"
+              src="https://is5-ssl.mzstatic.com/image/thumb/NHLksWLSZpTcIw36-n7vWA/738x416.webp"
+              height="150px"
+              width="300px"
+              alt=""
+          /></a>
+        </div>
+        <div class="slide">
+          <a
+            href="https://tv.apple.com/us/movie/finch/umc.cmc.47dkj9f2ho3h8dwxixflz65q5"
+            ><img
+              class="img_class1"
+              src="https://is3-ssl.mzstatic.com/image/thumb/xwiVfxV1l5Tfy6-1uQ25_Q/738x416.webp"
+              height="150px"
+              width="300px"
+              alt=""
+          /></a>
+        </div>
+        <div class="slide">
+          <a
+            href="https://tv.apple.com/us/show/the-shrink-next-door/umc.cmc.jov1gljmqnux0i15rbqsoyfk"
+            ><img
+              class="img_class1"
+              src="https://is2-ssl.mzstatic.com/image/thumb/SEsiWD2cTDShiJqUtRPAxg/738x416.webp"
+              height="150px"
+              width="300px"
+              alt=""
+          /></a>
+        </div>
+        <div class="slide">
+          <a
+            href="https://tv.apple.com/us/show/the-problem-with-jon-stewart/umc.cmc.4fcexvzqezr25p9weks6sxpob"
+            ><img
+              class="img_class1"
+              src="https://is1-ssl.mzstatic.com/image/thumb/a99v9iRDYcIGof0CvxUUoA/738x416.webp"
+              height="150px"
+              width="300px"
+              alt=""
+          /></a>
+        </div>
+        <div class="slide">
+          <a
+            href="https://tv.apple.com/us/show/the-oprah-conversation/umc.cmc.49yt85r7ow6904u0177r694qy"
+            ><img
+              class="img_class1"
+              src="https://is3-ssl.mzstatic.com/image/thumb/6MFkEmAhzwoAZfThq0xWHA/738x416.webp"
+              height="150px"
+              width="300px"
+              alt=""
+          /></a>
+        </div>
+      </div>
+      <hr />
+
+      <div>
         <h4>Cast & Crew</h4>
-        <img class="img_class" src = "https://is2-ssl.mzstatic.com/image/thumb/QK7gu-ZwxdOkQfBlOhXIag/492x492ve.webp" height="150px" width="150px" alt = ""/>
-        <img class="img_class" src = "https://is1-ssl.mzstatic.com/image/thumb/KXvzMPttFttjXF3AYHzdIQ/492x492ve.webp" height="150px" width="150px" alt = ""/>
-        <img class="img_class" src = "https://is1-ssl.mzstatic.com/image/thumb/MvJ71pvDPYLVTWNUbhfQeQ/492x492ve.webp" height="150px" width="150px" alt = ""/>
-        <img class="img_class" src = "https://is2-ssl.mzstatic.com/image/thumb/oMEgYxua0J48hEt2x1BaJw/492x492ve.webp" height="150px" width="150px" alt = ""/>
-        <img class="img_class" src = "https://is3-ssl.mzstatic.com/image/thumb/F_bWtcYAh8dkr69wUfzfBA/492x492ve.webp" height="150px" width="150px" alt = ""/>
-        <img class="img_class" src = "https://is2-ssl.mzstatic.com/image/thumb/PCP_BnJtkh0Fxzp7ZVkm5A/492x492ve.webp" height="150px" width="150px" alt = ""/>
-        <img class="img_class" src = "https://is1-ssl.mzstatic.com/image/thumb/GriC6J2qG4Pc8ilm881NSg/492x492ve.webp" height="150px" width="150px" alt = ""/>
-        <img class="img_class" src = "https://is1-ssl.mzstatic.com/image/thumb/GriC6J2qG4Pc8ilm881NSg/492x492ve.webp" height="150px" width="150px" alt = ""/>
-    </div>
-<!-- 
-    <main>
-        <span>&#139;</span>
-        <span>&#155;</span>
-        <section>
-            <div class="carousel1"><img class="carousel1i" src = "https://is2-ssl.mzstatic.com/image/thumb/GT66HoV8VJL1IZwaqos_TQ/738x416.webp" alt = ""/></div>
-            <div class="carousel1"><img class="carousel1i" src = "https://is3-ssl.mzstatic.com/image/thumb/AWDRdQz0nepFpnsUNiTDuw/738x416.webp" alt = ""/></div>
-            <div class="carousel1"><img class="carousel1i" src = "https://is4-ssl.mzstatic.com/image/thumb/UPoQbHoPte_TFJXEvKIIsw/738x416.webp" alt = ""/></div>
-            <div class="carousel1"><img class="carousel1i" src = "https://is2-ssl.mzstatic.com/image/thumb/qYEYYvFXN2O4zEuCcBSbjw/738x416.webp" alt = ""/></div>
-            <div class="carousel1"><img class="carousel1i" src = "https://is1-ssl.mzstatic.com/image/thumb/oANBVngpEJDvHRhdyozySA/738x416.webp" alt = ""/></div>
-            <div class="carousel1"><img class="carousel1i" src = "https://drive.google.com/file/d/1EUYB5O31csGUhHQxGUQbeMXOCHP4C25B/view?usp=sharing" alt=""/></div>
-            <div class="carousel1"><img class="carousel1i" src = "https://is2-ssl.mzstatic.com/image/thumb/qYEYYvFXN2O4zEuCcBSbjw/738x416.webp" alt = ""/></div>
-            <div class="carousel1"><img class="carousel1i" src = "https://is1-ssl.mzstatic.com/image/thumb/oANBVngpEJDvHRhdyozySA/738x416.webp" alt = ""/></div>
-            
-        </section>
-    </main> -->
+        <img
+          class="img_class"
+          src="https://is2-ssl.mzstatic.com/image/thumb/QK7gu-ZwxdOkQfBlOhXIag/492x492ve.webp"
+          height="150px"
+          width="150px"
+          alt=""
+        />
+        <img
+          class="img_class"
+          src="https://is1-ssl.mzstatic.com/image/thumb/KXvzMPttFttjXF3AYHzdIQ/492x492ve.webp"
+          height="150px"
+          width="150px"
+          alt=""
+        />
+        <img
+          class="img_class"
+          src="https://is1-ssl.mzstatic.com/image/thumb/MvJ71pvDPYLVTWNUbhfQeQ/492x492ve.webp"
+          height="150px"
+          width="150px"
+          alt=""
+        />
+        <img
+          class="img_class"
+          src="https://is2-ssl.mzstatic.com/image/thumb/oMEgYxua0J48hEt2x1BaJw/492x492ve.webp"
+          height="150px"
+          width="150px"
+          alt=""
+        />
+        <img
+          class="img_class"
+          src="https://is3-ssl.mzstatic.com/image/thumb/F_bWtcYAh8dkr69wUfzfBA/492x492ve.webp"
+          height="150px"
+          width="150px"
+          alt=""
+        />
+        <img
+          class="img_class"
+          src="https://is2-ssl.mzstatic.com/image/thumb/PCP_BnJtkh0Fxzp7ZVkm5A/492x492ve.webp"
+          height="150px"
+          width="150px"
+          alt=""
+        />
+        <img
+          class="img_class"
+          src="https://is1-ssl.mzstatic.com/image/thumb/GriC6J2qG4Pc8ilm881NSg/492x492ve.webp"
+          height="150px"
+          width="150px"
+          alt=""
+        />
+        <img
+          class="img_class"
+          src="https://is1-ssl.mzstatic.com/image/thumb/GriC6J2qG4Pc8ilm881NSg/492x492ve.webp"
+          height="150px"
+          width="150px"
+          alt=""
+        />
+      </div>
 
-    <hr>
-    <div class="watch">
+      <hr />
+      <div class="watch">
         <h4>How to Watch</h4>
         <div class="card">
-            <img class="card-img-top" src="https://is1-ssl.mzstatic.com/image/thumb/DB8YqlVtN7M8YvGvgsP2eg/400x225.png" alt="">
-            <div class="card-body">
+          <img
+            class="card-img-top"
+            src="https://is1-ssl.mzstatic.com/image/thumb/DB8YqlVtN7M8YvGvgsP2eg/400x225.png"
+            alt=""
+          />
+          <div class="card-body">
             <p class="card-text">Start Free Trial</p>
-            </div>
+          </div>
         </div>
         <p>7 days free, then $4.99/month.</p>
-    </div>
+      </div>
 
-    <div class="product-footer secondary-bg-color">
+      <div class="product-footer secondary-bg-color">
         <div id="about-footer" class="product-footer__container">
-                <h2 class="product-footer__title typ-headline-emph">About</h2>
-                <div class="product-footer__info">
-                    <div class="review-card tertiary-bg-color">
-                        <div class="review-card__title typ-headline-emph">
-                            <span>Pinecone &amp; Pony</span>
-                            <span class="review-card__title--sub typ-footnote clr-secondary-text">
-                                <ul class="review-card__title--sub--list">
-                                        <li>KIDS &amp; FAMILY</li>
-                                </ul>
-                            </span>
-                        </div>
-                        <div class="line-clamp-wrapper">
-        <div class="line-clamp line-clamp--with-more product-footer__description typ-subhead clr-secondary-text" style="--link-length:4" dir="auto">
-            
-                            Kate Beaton’s beloved book comes to life in this animated series. As a warrior in training, Pinecone fears no challenge. Thankfully, Pony always makes sure Pinecone never gets in over her head. Together they learn life can be a fun-filled adventure.
-                        
-        </div>
-                <button class="line-clamp__more lt-line-clamp__more typography-footnote-emphasized" type="button">
-    
-                    MORE
+          <h2 class="product-footer__title typ-headline-emph">About</h2>
+          <div class="product-footer__info">
+            <div class="review-card tertiary-bg-color">
+              <div class="review-card__title typ-headline-emph">
+                <span>Pinecone & Pony</span>
+                <span
+                  class="review-card__title--sub typ-footnote clr-secondary-text"
+                >
+                  <ul class="review-card__title--sub--list">
+                    <li>KIDS & FAMILY</li>
+                  </ul>
+                </span>
+              </div>
+              <div class="line-clamp-wrapper">
+                <div
+                  class="line-clamp line-clamp--with-more product-footer__description typ-subhead clr-secondary-text"
+                  style="--link-length: 4"
+                  dir="auto"
+                >
+                  Kate Beaton’s beloved book comes to life in this animated
+                  series. As a warrior in training, Pinecone fears no challenge.
+                  Thankfully, Pony always makes sure Pinecone never gets in over
+                  her head. Together they learn life can be a fun-filled
+                  adventure.
+                </div>
+                <button
+                  class="line-clamp__more lt-line-clamp__more typography-footnote-emphasized"
+                  type="button"
+                >
+                  MORE
                 </button>
-    </div>
-    <!---->
-                    </div>
-                    <hr>
-    <!----><!---->            </div>
-            <div class="product-footer__metadata">
-                <section class="product-footer__metadata__section">
-                    <h3 class="product-footer__metadata__section__title typ-headline-emph">Information</h3>
-                    <dl>
-    <!---->                        <dt class="typ-caption">Genre</dt>
-                            <dd class="product-footer__metadata__section__desc typ-caption clr-secondary-text">Kids &amp; Family</dd>
-                            <dt class="typ-caption">Coming Soon</dt>
-                            <dd class="product-footer__metadata__section__desc typ-caption clr-secondary-text">2022</dd>
-    <!---->                        <dt class="typ-caption">Rated</dt>
-                                <dd class="product-footer__metadata__section__desc typ-caption clr-secondary-text">TV-Y</dd>
-                            <dt class="typ-caption">
-                                Region of Origin
-                            </dt>
-                            <dd class="product-footer__metadata__section__desc typ-caption clr-secondary-text">Canada</dd>
-                            <dt class="typ-caption">Original Audio</dt>
-                            <dd class="product-footer__metadata__section__desc typ-caption clr-secondary-text">English</dd>
-    <!---->                </dl>
-                </section>
-    <!----><!---->        </div>
+              </div>
+              <!---->
+            </div>
+
+            <!----><!---->
+          </div>
+          <hr />
+          <div class="product-footer__metadata">
+            <section class="product-footer__metadata__section">
+              <h3
+                class="product-footer__metadata__section__title typ-headline-emph"
+              >
+                Information
+              </h3>
+              <dl>
+                <!---->
+                <dt class="typ-caption">Genre</dt>
+                <dd
+                  class="product-footer__metadata__section__desc typ-caption clr-secondary-text"
+                >
+                  Kids &amp; Family
+                </dd>
+                <dt class="typ-caption">Coming Soon</dt>
+                <dd
+                  class="product-footer__metadata__section__desc typ-caption clr-secondary-text"
+                >
+                  2022
+                </dd>
+                <!---->
+                <dt class="typ-caption">Rated</dt>
+                <dd
+                  class="product-footer__metadata__section__desc typ-caption clr-secondary-text"
+                >
+                  TV-Y
+                </dd>
+                <dt class="typ-caption">Region of Origin</dt>
+                <dd
+                  class="product-footer__metadata__section__desc typ-caption clr-secondary-text"
+                >
+                  Canada
+                </dd>
+                <dt class="typ-caption">Original Audio</dt>
+                <dd
+                  class="product-footer__metadata__section__desc typ-caption clr-secondary-text"
+                >
+                  English
+                </dd>
+                <!---->
+              </dl>
+            </section>
+            <!----><!---->
+          </div>
         </div>
-    </div>
-    <footer>
-    <div>
+      </div>
+      <footer>
+        <div>
           <p class="clr-primary-text copyright">
-              Copyright © 2022
-              <a href="https://www.apple.com" target="_blank" rel="noopener noreferrer">
-                  Apple Inc.
-              </a>
-              All rights reserved.
+            Copyright © 2022
+            <a
+              href="https://www.apple.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Apple Inc.
+            </a>
+            All rights reserved.
           </p>
           <p class="global-footer__links">
-              <a class="clr-primary-text" target="_blank" href="https://www.apple.com/legal/internet-services/" rel="noopener noreferrer">
-                  Internet Service Terms |
-              </a>
-              <a class="clr-primary-text" target="_blank" href="https://www.apple.com/legal/privacy/en-ww/" rel="noopener noreferrer">
-                  Apple TV &amp; Privacy |
-              </a>
-              <a class="clr-primary-text" target="_blank" href="https://www.apple.com/privacy/use-of-cookies/" rel="noopener noreferrer">
-                  Cookie Warning |
-              </a>
-              <a class="clr-primary-text" target="_blank" href="https://support.apple.com/tv" rel="noopener noreferrer">
-                  Support
-              </a>
+            <a
+              class="clr-primary-text"
+              target="_blank"
+              href="https://www.apple.com/legal/internet-services/"
+              rel="noopener noreferrer"
+            >
+              Internet Service Terms |
+            </a>
+            <a
+              class="clr-primary-text"
+              target="_blank"
+              href="https://www.apple.com/legal/privacy/en-ww/"
+              rel="noopener noreferrer"
+            >
+              Apple TV &amp; Privacy |
+            </a>
+            <a
+              class="clr-primary-text"
+              target="_blank"
+              href="https://www.apple.com/privacy/use-of-cookies/"
+              rel="noopener noreferrer"
+            >
+              Cookie Warning |
+            </a>
+            <a
+              class="clr-primary-text"
+              target="_blank"
+              href="https://support.apple.com/tv"
+              rel="noopener noreferrer"
+            >
+              Support
+            </a>
           </p>
+        </div>
+      </footer>
     </div>
-    </footer>
-</div>
-</body>
+
+    <script type="text/javascript" src="./java files/ponycartoon.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://fonts.googleapis.com/css?family=Open+Sans:800&display=swap"></script>
+  </body>
 </html>
