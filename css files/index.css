@@ -6,8 +6,7 @@
 .landing_navbar_logo > img {
   width: 22%;
   height: 20%;
-  /* border: 3px solid green; */
-  /* margin: 5px; */
+
 }
 #navbar_landing {
   width: 100%;
@@ -28,6 +27,7 @@
   border-radius: 5px;
   /* margin: 7px; */
   margin-left: 10px;
+  width:50px;
 }
 .d-flex {
   display: flex !important;
@@ -594,6 +594,7 @@ button {
 /* ======================================== */
 .footer {
   height: 80px;
+  margin-bottom: 100px;
 }
 .footer {
   padding: 15px 40px 5px 40px;
@@ -613,4 +614,40 @@ button {
   color: #383737;
   cursor: pointer;
   width: 30%;
+}
+/* ============================================= */
+.bottom_bar {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 40px 10px 40px;
+  color: #eeeeee;
+  bottom: -100px;
+  position: fixed;
+  background-color: #262629;
+  transition-duration: 0.5s;
+}
+.bottomBar1 > h6 {
+  font-weight: bolder;
+  font-size: 17px;
+}
+.bottomBar1 > p {
+  font-size: 14px;
+  color: #c7c3c3c7;
+}
+.bottomBar1 > p > span {
+  color: #0167d6;
+}
+.bottomBar2 > button {
+  padding: 5px 22px 5px 22px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+.bottomBar2 > p {
+  font-size: 11px;
+  margin-left: -7px;
+  color: #949090c2;
 }
