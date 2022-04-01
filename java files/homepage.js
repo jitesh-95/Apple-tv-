@@ -275,7 +275,7 @@ var coming_soon = [
   link : "https://tv.apple.com/us/show/slow-horses/umc.cmc.2szz3fdt71tl1ulnbp8utgq5o?ctx_brand=tvs.sbd.4000",
   tag : "New Series Premieres Friday"},
   {image : "https://is1-ssl.mzstatic.com/image/thumb/Features116/v4/20/24/bb/2024bb46-c79a-08ee-0d54-536bc624fe18/U0YtVFZBLVdXLVBpbmVjb25lX2FuZF9Qb255LVMxLUNTLmxzcg.lsr/1478x832fe.webp",
-  link : "",
+  link : "ponycartoon.html",
   tag : "New Series Premieres April 8"},
   {image : "https://is5-ssl.mzstatic.com/image/thumb/Features122/v4/b6/e4/1b/b6e41bbb-cc70-9c67-f3d3-367cb732d23d/U0YtVFZBLVdXLVJvYXItQ1MtQnJpY2tfbm9CdWcubHNy.lsr/1478x832fe.webp",
   link : "https://tv.apple.com/us/show/roar/umc.cmc.2os8kmimhw58fqxcu7xcmx8hd?ctx_brand=tvs.sbd.4000",
