@@ -81,7 +81,7 @@ button {
 }
 /* medium scree  */
 
-@media all and (min-width: 600px) and (max-width: 1100px) {
+@media all and (min-width: 600px) and (max-width: 1000px) {
   #innerhead {
     margin-top: 27%;
   }
@@ -105,7 +105,7 @@ button {
     margin: auto;
   }
 }
-.logo{
+.logo {
   text-decoration: none;
   color: black;
 }
