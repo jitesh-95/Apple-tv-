@@ -105,6 +105,10 @@ button {
     margin: auto;
   }
 }
+.logo{
+  text-decoration: none;
+  color: black;
+}
 
 /* ============================================= */
 .best_picture {

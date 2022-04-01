@@ -9,9 +9,9 @@ function signin(){
     var appleId = document.querySelector("#inputemail").value;
 
     console.log(appleId);
-    for(var i = 0; i<usersignin; i++){
-
-        if(usersignin[i] == appleId){
+    for(var i = 0; i<usersignin.length; i++){
+        
+        if(usersignin[i].email == appleId){
             alert("Login Successfull");
             window.location.href = "index.html";
             break;
