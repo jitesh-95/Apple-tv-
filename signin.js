@@ -1,23 +1,24 @@
-document.querySelector("form").addEventListener("submit",signin);
+document.querySelector("form").addEventListener("submit", loginFun);
+var regdUsers = JSON.parse(localStorage.getItem("userdata"));
+//console.log(regdUsers);
 
-var usersignin = JSON.parse(localStorage.getItem("userdata"));
-console.log(usersignin);
+function loginFun() {
+  event.preventDefault();
+  var enteredEmail = document.querySelector("#inputemail").value;
 
-function signin(){
-    event.preventDefault();
+  //console.log(email);
 
-    var appleId = document.querySelector("#inputemail").value;
-
-    console.log(appleId);
-    for(var i = 0; i<usersignin.length; i++){
-        
-        if(usersignin[i].email == appleId){
-            alert("Login Successfull");
-            window.location.href = "index.html";
-            break;
-        }
-        else{
-            alert("Login failed");
-        }
+  for (var i = 0; i < regdUsers.length; i++) {
+    console.log(regdUsers[i]);
+    if (
+      regdUsers[i].email == enteredEmail
+   
+    ) {
+      alert("login success");
+      window.location.href = "index.html";
+      break;
+    } else {
+      console.log("login failed");
     }
+  }
 }
