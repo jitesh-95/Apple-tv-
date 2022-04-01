@@ -79,6 +79,10 @@ button {
   color: #0167d6;
   cursor: pointer;
 }
+.logo{
+  text-decoration: none;
+  color: black;
+}
 
 /* ============================================= */
 .best_picture {
