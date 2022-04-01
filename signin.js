@@ -7,7 +7,6 @@ function signin() {
   var enteredEmail = document.querySelector("#inputemail").value;
   //console.log(email);
 
-
   for (var i = 0; i < regdUsers.length; i++) {
     console.log(regdUsers[i]);
     if (
