@@ -6,8 +6,7 @@
 .landing_navbar_logo > img {
   width: 22%;
   height: 20%;
-  /* border: 3px solid green; */
-  /* margin: 5px; */
+
 }
 #navbar_landing {
   width: 100%;
@@ -28,6 +27,7 @@
   border-radius: 5px;
   /* margin: 7px; */
   margin-left: 10px;
+  width:50px;
 }
 .d-flex {
   display: flex !important;
@@ -53,7 +53,7 @@ button {
   position: absolute;
   color: white;
   top: 0;
-  margin-top: 465px;
+  margin-top: 33%;
   text-align: center;
   width: 100%;
 }
@@ -75,9 +75,39 @@ button {
   line-height: 5px;
   color: #888c8d;
 }
-#innerhead > p > span {
+#innerhead > p > a {
   color: #0167d6;
-  cursor: pointer;
+  text-decoration: none;
+}
+/* medium scree  */
+
+@media all and (min-width: 600px) and (max-width: 1000px) {
+  #innerhead {
+    margin-top: 27%;
+  }
+  #innerhead > h1 {
+    font-size: 35px;
+    margin-bottom: 10px;
+  }
+  #innerhead > h4 {
+    font-size: 15px;
+    width: 40%;
+    margin: auto;
+  }
+  #innerhead > button {
+    padding: 2px 20px 2px 20px;
+    font-size: 10px;
+  }
+  #innerhead > p {
+    font-size: 10px;
+    width: 40%;
+    line-height: 14px;
+    margin: auto;
+  }
+}
+.logo {
+  text-decoration: none;
+  color: black;
 }
 
 /* ============================================= */
@@ -94,6 +124,7 @@ button {
   font-size: 15px;
   line-height: 22px;
   color: #989898;
+  margin-bottom: 10px;
 }
 .picture {
   padding: 5px 10px 8px 4px;
@@ -117,7 +148,7 @@ button {
   padding: 0px 35px 10px 40px;
 }
 .seasons > h6 {
-  line-height: 20px;
+  line-height: 15px;
   font-size: 17px;
   font-weight: bolder;
   margin-bottom: 15px;
@@ -129,6 +160,9 @@ button {
   margin-right: 20px;
   padding: 0px 5px 10px 5px;
   cursor: pointer;
+}
+.inner_seasons:hover {
+  filter: contrast(80%);
 }
 .inner_seasons > img {
   width: 100%;
@@ -202,6 +236,7 @@ button {
   font-size: 15px;
   line-height: 22px;
   color: #989898;
+  margin-bottom: 10px;
 }
 .comingSoonData {
   width: 300px;
@@ -266,20 +301,29 @@ button {
   border-radius: 50%;
 }
 /* ================================================= */
+/* 5 slides  */
 
 .page_to_screen,
 .ambition,
 .findingVoices,
 .friendship,
-.dramaSeries {
+.dramaSeries,
+.all_feature_film,
+.all_comedy_series,
+.all_nonfiction,
+.fun_for_all {
   padding: 0px 35px 10px 45px;
 }
 .page_to_screen > h6,
 .ambition > h6,
 .findingVoices > h6,
 .friendship > h6,
-.dramaSeries > h6 {
-  line-height: 20px;
+.dramaSeries > h6,
+.all_feature_film > h6,
+.all_comedy_series > h6,
+.all_nonfiction > h6,
+.fun_for_all > h6 {
+  line-height: 15px;
   font-size: 17px;
   font-weight: bolder;
   margin-bottom: 15px;
@@ -289,18 +333,37 @@ button {
 .ambitionData,
 .findingVoicesData,
 .friendshipData,
-.dramaSeriesData {
+.dramaSeriesData,
+.featureFilmData,
+.comedySeriesData,
+.nonfictionData,
+.funForAllData {
   width: 240px;
   height: 135px;
   margin-right: 20px;
   padding: 0px 5px 10px 5px;
   cursor: pointer;
 }
+.pageToScreenData:hover,
+.ambitionData:hover,
+.findingVoicesData:hover,
+.friendshipData:hover,
+.dramaSeriesData:hover,
+.featureFilmData:hover,
+.comedySeriesData:hover,
+.nonfictionData:hover,
+.funForAllData:hover {
+  filter: contrast(70%);
+}
 .pageToScreenData > img,
 .ambitionData > img,
 .findingVoicesData > img,
 .friendshipData > img,
-.dramaSeriesData > img {
+.dramaSeriesData > img,
+.featureFilmData > img,
+.comedySeriesData > img,
+.nonfictionData > img,
+.funForAllData > img {
   width: 100%;
   height: 100%;
   border-radius: 10px;
@@ -310,11 +373,59 @@ button {
 .innerAmbition > button,
 .innerFindingVoices > button,
 .innerFriendship > button,
-.innerDramaSeries > button {
+.innerDramaSeries > button,
+.innerFeatureFilm > button,
+.innerComedySeries > button,
+.innerNonfiction > button,
+.innerFunForAll > button {
   background-color: rgba(230, 227, 227, 0.664);
   border-radius: 50%;
 }
 /* ============================================= */
+/* invasion  */
+.invasion {
+  position: relative;
+  margin-top: 15px;
+  height: 600px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.invasion > video {
+  min-width: 100%;
+}
+
+.innerInvasion {
+  position: absolute;
+  top: 0;
+  margin-top: 230px;
+  padding: 0px 35px 0px 45px;
+  color: white;
+}
+.innerInvasion > p {
+  width: 400px;
+  color: rgba(255, 255, 255, 0.658);
+  line-height: 20px;
+}
+.invasionData {
+  width: 190px;
+  height: 110px;
+  margin-right: 20px;
+}
+.invasionData:hover {
+  filter: contrast(70%);
+}
+.invasionData > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.sliderBox {
+  display: flex;
+  margin-top: 126px;
+}
+
+/* ================================================ */
 
 .join_the_conversation {
   padding: 0px 45px 10px 46px;
@@ -362,6 +473,181 @@ button {
   border-radius: 50%;
 }
 /* ===================================================== */
+/* 4 slides  */
 
-/* pachinko is here's CSS is same as best picture coda's CSS  */
+.big_pachinko,
+.amazing_planet,
+.kids_family {
+  padding: 0px 40px 10px 40px;
+}
+.big_pachinko > h6,
+.amazing_planet > h6,
+.kids_family > h6 {
+  font-weight: bolder;
+  font-size: 17px;
+  margin-bottom: 0px;
+  color: #1f1f1fd8;
+}
+.big_pachinko > p,
+.amazing_planet > p,
+.kids_family > p {
+  font-size: 15px;
+  line-height: 22px;
+  color: #989898;
+  margin-bottom: 10px;
+}
+.pachinko_picture,
+.planet_picture,
+.kidFamily_picture {
+  padding: 5px 10px 8px 4px;
+  cursor: pointer;
+}
+.pachinko_picture > img,
+.planet_picture > img,
+.kidFamily_picture > img {
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.267) 0px 3px 8px;
+}
+.small_pachinko > button,
+.small_amazing_planet > button,
+.small_kid_family > button {
+  background-color: rgba(230, 227, 227, 0.664);
+  border-radius: 50%;
+}
 /* ======================================================== */
+/* black box  */
+
+.black_box {
+  background-color: black;
+  margin-top: 10px;
+  text-align: center;
+  color: #ebebeb;
+  padding: 2%;
+}
+.appletvlogo {
+  margin-top: 21px;
+}
+.black_box > h1 {
+  line-height: 40px;
+  font-size: 45px;
+  margin: 20px 0px 30px 0px;
+}
+.black_box > h5 {
+  width: 820px;
+  letter-spacing: 1px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.black_box > a {
+  text-decoration: none;
+  color: #2281e6;
+  font-size: 14px;
+}
+.fa-solid {
+  margin-left: 6px;
+  font-size: 11px;
+}
+.devices {
+  margin-top: 20px;
+  padding: 0px 200px 0px 200px;
+  display: flex;
+  justify-content: space-evenly;
+}
+#apple {
+  margin-top: 15px;
+  cursor: pointer;
+}
+#iphone {
+  margin-top: 12px;
+  cursor: pointer;
+}
+#ipad {
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+#mac {
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+#airplay {
+  margin-top: 15px;
+  cursor: pointer;
+}
+.black_box > h4 {
+  letter-spacing: 1px;
+  font-weight: bolder;
+  margin-bottom: 5px;
+}
+.consoles {
+  display: flex;
+  margin-top: 15px;
+  justify-content: space-evenly;
+  padding: 0px 120px 0px 120px;
+}
+#gaming {
+  margin-bottom: 50px;
+}
+.black_box > p {
+  font-size: 11px;
+  margin-top: 5px;
+}
+/* ======================================== */
+.footer {
+  height: 80px;
+  margin-bottom: 100px;
+}
+.footer {
+  padding: 15px 40px 5px 40px;
+  font-size: 11px;
+}
+.footer1 {
+  display: flex;
+  justify-content: space-between;
+  color: #8f8e8e;
+}
+.footer1 > button {
+  border: none;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+.footer2 {
+  color: #383737;
+  cursor: pointer;
+  width: 30%;
+}
+/* ============================================= */
+.bottom_bar {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 40px 10px 40px;
+  color: #eeeeee;
+  bottom: -100px;
+  position: fixed;
+  background-color: #262629;
+  transition-duration: 0.5s;
+}
+.bottomBar1 > h6 {
+  font-weight: bolder;
+  font-size: 17px;
+}
+.bottomBar1 > p {
+  font-size: 14px;
+  color: #c7c3c3c7;
+}
+.bottomBar1 > p > span {
+  color: #0167d6;
+}
+.bottomBar2 > button {
+  padding: 5px 22px 5px 22px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+.bottomBar2 > p {
+  font-size: 11px;
+  margin-left: -7px;
+  color: #949090c2;
+}
