@@ -1,8 +1,65 @@
 
+var bestpicture=[
+  {image: "https://is2-ssl.mzstatic.com/image/thumb/Features112/v4/6f/b7/62/6fb7628d-679f-17db-dbf6-ac52a7debb06/d97eccb1-2dbf-45b5-a35d-452d9496715f.lsr/300x170fe.webp",
+  link:""},
+  {image: "https://is5-ssl.mzstatic.com/image/thumb/Features112/v4/de/3a/28/de3a2812-29b3-1e25-7941-a99ecb0e327c/851040fe-d937-4c50-b7d2-1188d59a022e.lsr/300x170fe.webp",
+  link:""},
+  {image: "https://is3-ssl.mzstatic.com/image/thumb/Features116/v4/4d/5e/12/4d5e12e1-9063-1e07-62be-b209b75401ff/19aac7af-1170-4a01-9f9e-b281b54f78df.lsr/300x170fe.webp",
+  link:""},
+  {image: "https://is4-ssl.mzstatic.com/image/thumb/Features122/v4/6e/6b/c5/6e6bc5c0-0329-5915-f402-3dd9e31b0ad1/0b0c78ef-1abb-44c5-af22-d7f46c5425f1.lsr/300x170fe.webp",
+  link:""},
+  {image: "https://is4-ssl.mzstatic.com/image/thumb/Features122/v4/ec/04/37/ec04376f-cf86-af1b-c914-444ef8236722/fdd6d9eb-204a-4a18-b69c-1f44af47b952.lsr/300x170fe.webp",
+  link:""},
+];
+
+bestpicture.map(function(elem){
+  var innerdiv = document.createElement("div");
+  var img = document.createElement("img");
+  img.src = elem.image;
+  var a_tag = document.createElement("a");
+  a_tag.href = elem.link;
+  innerdiv.append(img)
+  
+  a_tag.append(innerdiv)
+
+  innerdiv.setAttribute("class","picture")
+  document.querySelector(".small_best_pictures").append(a_tag);
+})
+
 $('.small_best_pictures').slick({
+  dots: false,
   infinite: false,
+  speed: 650,
   slidesToShow: 4,
-  slidesToScroll: 3,
+  slidesToScroll: 4,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 2,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 800,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
 });
 
 var seasonsData=[
@@ -392,28 +449,46 @@ $('.big_slides').slick({
 });
 
 var pageToScreen=[
-  {Image : "https://is1-ssl.mzstatic.com/image/thumb/Tb1jarRHaWN_SFiMjZcDHw/738x416.webp"},
-  {Image : "https://is4-ssl.mzstatic.com/image/thumb/Ro6cUnMcHLf3sEVL38YlRg/738x416.webp"},
-  {Image : "https://is2-ssl.mzstatic.com/image/thumb/8593WFOGVTTA1ncIGrL37g/738x416.webp"},
-  {Image : "https://is2-ssl.mzstatic.com/image/thumb/qYEYYvFXN2O4zEuCcBSbjw/738x416.webp"},
-  {Image : "https://is4-ssl.mzstatic.com/image/thumb/Iz8wdsRXYRysnRRCY0yMrA/738x416.webp"},
-  {Image : "https://is3-ssl.mzstatic.com/image/thumb/cyRvgYnPlaVn3rN2SDdW1Q/738x416.webp"},
-  {Image : "https://is1-ssl.mzstatic.com/image/thumb/oANBVngpEJDvHRhdyozySA/738x416.webp"},
-  {Image : "https://is2-ssl.mzstatic.com/image/thumb/vB48H4eBprLJ-WdCBTA6cw/738x416.webp"},
-  {Image : "https://is4-ssl.mzstatic.com/image/thumb/L4WNJNV3nbmyAL6MQSeGuw/738x416.webp"},
-  {Image : "https://is5-ssl.mzstatic.com/image/thumb/Cof8vC9vaCH-GYX6JltrQA/738x416.webp"},
-  {Image : "https://is3-ssl.mzstatic.com/image/thumb/D8bOyY8jg5hymGMxt1LSZg/738x416.webp"},
-  {Image : "https://is1-ssl.mzstatic.com/image/thumb/jRVuOiECbTmzx3HEVkbreA/738x416.webp"},
-  {Image : "https://is5-ssl.mzstatic.com/image/thumb/KdlcNbBUOtf7sUXH5z9N8A/738x416.webp"},
+  {Image : "https://is1-ssl.mzstatic.com/image/thumb/Tb1jarRHaWN_SFiMjZcDHw/738x416.webp",
+  link:"https://tv.apple.com/us/show/pachinko/umc.cmc.17vf6g68dy89kk1l1nnb6min4?ctx_brand=tvs.sbd.4000"},
+  {Image : "https://is4-ssl.mzstatic.com/image/thumb/Ro6cUnMcHLf3sEVL38YlRg/738x416.webp",
+  link:"https://tv.apple.com/us/show/the-last-days-of-ptolemy-grey/umc.cmc.bj6odozsws1abio4bkiy69g5?ctx_brand=tvs.sbd.4000"},
+  {Image : "https://is2-ssl.mzstatic.com/image/thumb/8593WFOGVTTA1ncIGrL37g/738x416.webp",
+  link:"https://tv.apple.com/us/movie/the-tragedy-of-macbeth/umc.cmc.4wpfk1xmi22h3zyv4a10lj1tw?ctx_brand=tvs.sbd.4000"},
+  {Image : "https://is2-ssl.mzstatic.com/image/thumb/qYEYYvFXN2O4zEuCcBSbjw/738x416.webp",
+  link:"https://tv.apple.com/us/show/foundation/umc.cmc.5983fipzqbicvrve6jdfep4x3?ctx_brand=tvs.sbd.4000"},
+  {Image : "https://is4-ssl.mzstatic.com/image/thumb/Iz8wdsRXYRysnRRCY0yMrA/738x416.webp",
+  link:"https://tv.apple.com/us/show/the-mosquito-coast/umc.cmc.5nghmxp88xe0qxhtlhfiu5r2h?ctx_brand=tvs.sbd.4000"},
+  {Image : "https://is3-ssl.mzstatic.com/image/thumb/cyRvgYnPlaVn3rN2SDdW1Q/738x416.webp",
+  link:""},
+  {Image : "https://is1-ssl.mzstatic.com/image/thumb/oANBVngpEJDvHRhdyozySA/738x416.webp",
+  link:""},
+  {Image : "https://is2-ssl.mzstatic.com/image/thumb/vB48H4eBprLJ-WdCBTA6cw/738x416.webp",
+  link:""},
+  {Image : "https://is4-ssl.mzstatic.com/image/thumb/L4WNJNV3nbmyAL6MQSeGuw/738x416.webp",
+  link:""},
+  {Image : "https://is5-ssl.mzstatic.com/image/thumb/Cof8vC9vaCH-GYX6JltrQA/738x416.webp",
+  link:""},
+  {Image : "https://is3-ssl.mzstatic.com/image/thumb/D8bOyY8jg5hymGMxt1LSZg/738x416.webp",
+  link:""},
+  {Image : "https://is1-ssl.mzstatic.com/image/thumb/jRVuOiECbTmzx3HEVkbreA/738x416.webp",
+  link:""},
+  {Image : "https://is5-ssl.mzstatic.com/image/thumb/KdlcNbBUOtf7sUXH5z9N8A/738x416.webp",
+  link:""},
 ];
 
 pageToScreen.map(function(elem){
   var innerdiv = document.createElement("div");
   var img = document.createElement("img");
   img.src = elem.Image;
+  var a_tag = document.createElement("a");
+  a_tag.href = elem.link;
   innerdiv.append(img)
+  
+  a_tag.append(innerdiv)
+
   innerdiv.setAttribute("class","pageToScreenData")
-  document.querySelector(".insidePageToScreen").append(innerdiv);
+  document.querySelector(".insidePageToScreen").append(a_tag);
 })
 
 $('.insidePageToScreen').slick({
@@ -453,13 +528,20 @@ $('.insidePageToScreen').slick({
 });
 
 var ambitionAndDetermination=[
-  {Image : "https://is1-ssl.mzstatic.com/image/thumb/lN-bUPh0Botn7U7jKgbnFg/738x416.webp"},
-  {Image : "https://is3-ssl.mzstatic.com/image/thumb/AWDRdQz0nepFpnsUNiTDuw/738x416.webp"},
-  {Image : "https://is1-ssl.mzstatic.com/image/thumb/VXktJkcnADdcq8RjZVT_nw/738x416.webp"},
-  {Image : "https://is2-ssl.mzstatic.com/image/thumb/8593WFOGVTTA1ncIGrL37g/738x416.webp"},
-  {Image : "https://is2-ssl.mzstatic.com/image/thumb/SEsiWD2cTDShiJqUtRPAxg/738x416.webp"},
-  {Image : "https://is3-ssl.mzstatic.com/image/thumb/_VWBeTzPLn6LeyUjlTaSiQ/738x416.webp"},
-  {Image : "https://is4-ssl.mzstatic.com/image/thumb/vWs6dt5xDhG_DjIoc-89tA/738x416.webp"},
+  {Image : "https://is1-ssl.mzstatic.com/image/thumb/lN-bUPh0Botn7U7jKgbnFg/738x416.webp",
+  link:"https://tv.apple.com/us/show/wecrashed/umc.cmc.6qw605uv2rwbzutk2p2fsgvq9?ctx_brand=tvs.sbd.4000"},
+  {Image : "https://is3-ssl.mzstatic.com/image/thumb/AWDRdQz0nepFpnsUNiTDuw/738x416.webp",
+  link:""},
+  {Image : "https://is1-ssl.mzstatic.com/image/thumb/VXktJkcnADdcq8RjZVT_nw/738x416.webp",
+  link:"https://tv.apple.com/us/show/swagger/umc.cmc.63e208601mwndrxpmguc5stbo?ctx_brand=tvs.sbd.4000"},
+  {Image : "https://is2-ssl.mzstatic.com/image/thumb/8593WFOGVTTA1ncIGrL37g/738x416.webp",
+  link:"https://tv.apple.com/us/movie/the-tragedy-of-macbeth/umc.cmc.4wpfk1xmi22h3zyv4a10lj1tw?ctx_brand=tvs.sbd.4000"},
+  {Image : "https://is2-ssl.mzstatic.com/image/thumb/SEsiWD2cTDShiJqUtRPAxg/738x416.webp",
+  link:"https://tv.apple.com/us/show/the-shrink-next-door/umc.cmc.jov1gljmqnux0i15rbqsoyfk?ctx_brand=tvs.sbd.4000"},
+  {Image : "https://is3-ssl.mzstatic.com/image/thumb/_VWBeTzPLn6LeyUjlTaSiQ/738x416.webp",
+  link:""},
+  {Image : "https://is4-ssl.mzstatic.com/image/thumb/vWs6dt5xDhG_DjIoc-89tA/738x416.webp",
+  link:""},
   
 ];
 
@@ -468,8 +550,12 @@ ambitionAndDetermination.map(function(elem){
   var img = document.createElement("img");
   img.src = elem.Image;
   innerdiv.append(img)
+
+  var a_tag = document.createElement("a");
+  a_tag.href = elem.link;
+  a_tag.append(innerdiv)
   innerdiv.setAttribute("class","ambitionData")
-  document.querySelector(".innerAmbition").append(innerdiv);
+  document.querySelector(".innerAmbition").append(a_tag);
 })
 
 $('.innerAmbition').slick({
@@ -509,14 +595,22 @@ $('.innerAmbition').slick({
 });
 
 var findingVoices=[
-  {Image : "https://is1-ssl.mzstatic.com/image/thumb/zRCSBlp0LjwClRXsjyDNYQ/738x416.webp"},
-  {Image : "https://is3-ssl.mzstatic.com/image/thumb/cyRvgYnPlaVn3rN2SDdW1Q/738x416.webp"},
-  {Image : "https://is3-ssl.mzstatic.com/image/thumb/3iAbZQ4pznOpDRenkvOhNA/738x416.webp"},
-  {Image : "https://is1-ssl.mzstatic.com/image/thumb/VXktJkcnADdcq8RjZVT_nw/738x416.webp"},
-  {Image : "https://is4-ssl.mzstatic.com/image/thumb/rZ34KsuVSjdutVP-0HO95A/738x416.webp"},
-  {Image : "https://is2-ssl.mzstatic.com/image/thumb/D1SCGzM1ESBh-SIkHwcvUQ/738x416.webp"},
-  {Image : "https://is3-ssl.mzstatic.com/image/thumb/_ODFuW8DJbcFSHL_yhHuVA/738x416.webp"},
-  {Image : "https://is5-ssl.mzstatic.com/image/thumb/Ru8FEVLXR20CLzgnt9UXOQ/738x416.webp"},
+  {Image : "https://is1-ssl.mzstatic.com/image/thumb/zRCSBlp0LjwClRXsjyDNYQ/738x416.webp",
+  link:""},
+  {Image : "https://is3-ssl.mzstatic.com/image/thumb/cyRvgYnPlaVn3rN2SDdW1Q/738x416.webp",
+  link:"https://tv.apple.com/us/movie/the-sky-is-everywhere/umc.cmc.22xahad7xeqkok7u24xk0e788?ctx_brand=tvs.sbd.4000"},
+  {Image : "https://is3-ssl.mzstatic.com/image/thumb/3iAbZQ4pznOpDRenkvOhNA/738x416.webp",
+  link:""},
+  {Image : "https://is1-ssl.mzstatic.com/image/thumb/VXktJkcnADdcq8RjZVT_nw/738x416.webp",
+  link:"https://tv.apple.com/us/show/swagger/umc.cmc.63e208601mwndrxpmguc5stbo?ctx_brand=tvs.sbd.4000"},
+  {Image : "https://is4-ssl.mzstatic.com/image/thumb/rZ34KsuVSjdutVP-0HO95A/738x416.webp",
+  link:"https://tv.apple.com/us/show/acapulco/umc.cmc.8xrkg9zywke7g6a9ahmvpr3l?ctx_brand=tvs.sbd.4000"},
+  {Image : "https://is2-ssl.mzstatic.com/image/thumb/D1SCGzM1ESBh-SIkHwcvUQ/738x416.webp",
+  link:""},
+  {Image : "https://is3-ssl.mzstatic.com/image/thumb/_ODFuW8DJbcFSHL_yhHuVA/738x416.webp",
+  link:""},
+  {Image : "https://is5-ssl.mzstatic.com/image/thumb/Ru8FEVLXR20CLzgnt9UXOQ/738x416.webp",
+  link:""},
   
 ];
 
@@ -524,9 +618,13 @@ findingVoices.map(function(elem){
   var innerdiv = document.createElement("div");
   var img = document.createElement("img");
   img.src = elem.Image;
+  var a_tag = document.createElement("a");
+  a_tag.href = elem.link;
   innerdiv.append(img)
+
+  a_tag.append(innerdiv)
   innerdiv.setAttribute("class","findingVoicesData")
-  document.querySelector(".innerFindingVoices").append(innerdiv);
+  document.querySelector(".innerFindingVoices").append(a_tag);
 })
 
 $('.innerFindingVoices').slick({
@@ -679,16 +777,26 @@ $('.inside_conversation').slick({
 });
 
 var powerOFfriendship=[
-  {Image : "https://is3-ssl.mzstatic.com/image/thumb/HGw-QzsXlYUDp68NCOvxZQ/738x416.webp"},
-  {Image : "https://is1-ssl.mzstatic.com/image/thumb/UtRuOihF2zNFPo4g5zUwdA/738x416.webp"},
-  {Image : "https://is5-ssl.mzstatic.com/image/thumb/owNSUO3F109RC75YDPMY7A/738x416.webp"},
-  {Image : "https://is2-ssl.mzstatic.com/image/thumb/2lfdtvo9bvduvVLrbcASow/738x416.webp"},
-  {Image : "https://is3-ssl.mzstatic.com/image/thumb/3J1XDMDhXrh-VCuraBUQJg/738x416.webp"},
-  {Image : "https://is4-ssl.mzstatic.com/image/thumb/RP47edx-hRW2rCun48Lx2w/738x416.webp"},
-  {Image : "https://is5-ssl.mzstatic.com/image/thumb/PsLk5RQuPoAqWJ-lVe1gLQ/738x416.webp"},
-  {Image : "https://is2-ssl.mzstatic.com/image/thumb/tvBkfH_Ojxnmaod8KMGs_g/738x416.webp"},
-  {Image : "https://is1-ssl.mzstatic.com/image/thumb/f2vtGOjht_s3h3tBMlDHSg/738x416.webp"},
-  {Image : "https://is1-ssl.mzstatic.com/image/thumb/AS1GpWWwwGwHxrXD7Sny5A/738x416.webp"},
+  {Image : "https://is3-ssl.mzstatic.com/image/thumb/HGw-QzsXlYUDp68NCOvxZQ/738x416.webp",
+  link:"https://tv.apple.com/us/show/stillwater/umc.cmc.3czcagetjq31vvbgkkyp1xiao?ctx_brand=tvs.sbd.4000"},
+  {Image : "https://is1-ssl.mzstatic.com/image/thumb/UtRuOihF2zNFPo4g5zUwdA/738x416.webp",
+  link:"https://tv.apple.com/us/show/the-snoopy-show/umc.cmc.5iswprrvjjw6ab020a17x4ca3?ctx_brand=tvs.sbd.4000"},
+  {Image : "https://is5-ssl.mzstatic.com/image/thumb/owNSUO3F109RC75YDPMY7A/738x416.webp",
+  link:"https://tv.apple.com/us/show/fraggle-rock-back-to-the-rock/umc.cmc.2r077021gw7fu0noml0hln2yq?ctx_brand=tvs.sbd.4000"},
+  {Image : "https://is2-ssl.mzstatic.com/image/thumb/2lfdtvo9bvduvVLrbcASow/738x416.webp",
+  link:"https://tv.apple.com/us/show/wolfboy-and-the-everything-factory/umc.cmc.6f1xxgn2dg52deawakawg20r9?ctx_brand=tvs.sbd.4000"},
+  {Image : "https://is3-ssl.mzstatic.com/image/thumb/3J1XDMDhXrh-VCuraBUQJg/738x416.webp",
+  link:"https://tv.apple.com/us/show/get-rolling-with-otis/umc.cmc.3tql7vmqfmedyw1ab7efys3z?ctx_brand=tvs.sbd.4000"},
+  {Image : "https://is4-ssl.mzstatic.com/image/thumb/RP47edx-hRW2rCun48Lx2w/738x416.webp",
+  link:""},
+  {Image : "https://is5-ssl.mzstatic.com/image/thumb/PsLk5RQuPoAqWJ-lVe1gLQ/738x416.webp",
+  link:""},
+  {Image : "https://is2-ssl.mzstatic.com/image/thumb/tvBkfH_Ojxnmaod8KMGs_g/738x416.webp",
+  link:""},
+  {Image : "https://is1-ssl.mzstatic.com/image/thumb/f2vtGOjht_s3h3tBMlDHSg/738x416.webp",
+  link:""},
+  {Image : "https://is1-ssl.mzstatic.com/image/thumb/AS1GpWWwwGwHxrXD7Sny5A/738x416.webp",
+  link:""},
   
 ];
 
@@ -697,8 +805,12 @@ powerOFfriendship.map(function(elem){
   var img = document.createElement("img");
   img.src = elem.Image;
   innerdiv.append(img)
+  var a_tag = document.createElement("a");
+  a_tag.href = elem.link;
+  a_tag.append(innerdiv)
+
   innerdiv.setAttribute("class","friendshipData")
-  document.querySelector(".innerFriendship").append(innerdiv);
+  document.querySelector(".innerFriendship").append(a_tag);
 })
 
 $('.innerFriendship').slick({
@@ -1212,12 +1324,18 @@ $('.innerFunForAll').slick({
 });
 
 var invasion=[
-  {Image : "https://is1-ssl.mzstatic.com/image/thumb/oANBVngpEJDvHRhdyozySA/738x416.webp"},
-  {Image : "https://is2-ssl.mzstatic.com/image/thumb/78-I7VenST4ztZYfwMf6AQ/1478x832.webp"},
-  {Image : "https://is3-ssl.mzstatic.com/image/thumb/kVTKGnVvCdFlB1sZeKa8YQ/738x416.webp"},
-  {Image : "https://is2-ssl.mzstatic.com/image/thumb/vB48H4eBprLJ-WdCBTA6cw/738x416.webp"},
-  {Image : "https://is4-ssl.mzstatic.com/image/thumb/Iz8wdsRXYRysnRRCY0yMrA/738x416.webp"},
-  {Image : "https://is5-ssl.mzstatic.com/image/thumb/y-GzfKyC0y6x5Dd8254GpQ/738x416.webp"},
+  {Image : "https://is1-ssl.mzstatic.com/image/thumb/oANBVngpEJDvHRhdyozySA/738x416.webp",
+  link:"https://tv.apple.com/us/movie/greyhound/umc.cmc.o5z5ztufuu3uv8lx7m0jcega?ctx_brand=tvs.sbd.4000"},
+  {Image : "https://is2-ssl.mzstatic.com/image/thumb/78-I7VenST4ztZYfwMf6AQ/1478x832.webp",
+  link:"https://tv.apple.com/us/show/severance/umc.cmc.1srk2goyh2q2zdxcx605w8vtx?ctx_brand=tvs.sbd.4000"},
+  {Image : "https://is3-ssl.mzstatic.com/image/thumb/kVTKGnVvCdFlB1sZeKa8YQ/738x416.webp",
+  link:"https://tv.apple.com/us/show/suspicion/umc.cmc.64yj71dmrdihhmo96h0lgjmw5?ctx_brand=tvs.sbd.4000"},
+  {Image : "https://is2-ssl.mzstatic.com/image/thumb/vB48H4eBprLJ-WdCBTA6cw/738x416.webp",
+  link:"https://tv.apple.com/us/show/truth-be-told/umc.cmc.6hegr60w8pjyfcblgocjek7oo?ctx_brand=tvs.sbd.4000"},
+  {Image : "https://is4-ssl.mzstatic.com/image/thumb/Iz8wdsRXYRysnRRCY0yMrA/738x416.webp",
+  link:"https://tv.apple.com/us/show/the-mosquito-coast/umc.cmc.5nghmxp88xe0qxhtlhfiu5r2h?ctx_brand=tvs.sbd.4000"},
+  {Image : "https://is5-ssl.mzstatic.com/image/thumb/y-GzfKyC0y6x5Dd8254GpQ/738x416.webp",
+  link:"https://tv.apple.com/us/show/trying/umc.cmc.6muy4la7lj1omu5nci4bt2m66?ctx_brand=tvs.sbd.4000"},
   
 ];
 
@@ -1226,8 +1344,12 @@ invasion.map(function(elem){
   var img = document.createElement("img");
   img.src = elem.Image;
   innerdiv.append(img)
+
+  var a_tag = document.createElement("a");
+  a_tag.href = elem.link;
+  a_tag.append(innerdiv)
   innerdiv.setAttribute("class","invasionData")
-  document.querySelector(".sliderBox").append(innerdiv);
+  document.querySelector(".sliderBox").append(a_tag);
 })
 
 
