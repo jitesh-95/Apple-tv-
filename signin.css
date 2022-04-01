@@ -30,8 +30,12 @@ body {
     box-sizing: border-box;
     text-decoration: none;
     margin: auto;
+    
 }
-
+i{
+    color: grey;
+    
+}
 .signin_container{
     height: 450px;
     width: 60%;
