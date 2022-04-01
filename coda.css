@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+#container {
+    overflow: hidden;
+height:2500px;
+    width: 100%;
+    position: relative;
+}
+
+#container>video{
+    min-width:100%;
+}
+
+.one {
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    font-size: 220px;
+    color: white;
+    width: 1100px;
+}
+
+.two {
+    position: absolute;
+    bottom: 400px;
+    left: 100px;
+    font-size: 100px;
+    display: block;
+
+    text-align: center;
+    color: white;
+    line-height: 200px;
+
+
+}
+
+#btn1 {
+    color: white;
+    padding: 70px 300px 70px 300px;
+
+    font-size: 100px;
+    background-color: blue;
+    left: 40px;
+    border: 1px solid white;
+    margin-bottom: 80px;
+}
+
+#btn2 {
+    color: white;
+    padding: 70px 250px 70px 250px;
+    background-color: #2a2b2b;
+    font-size: 100px;
+
+    border: 1px solid white;
+
+}
+
+.three {
+
+    height: auto;
+    position: absolute;
+    left: 1500px;
+    bottom: 380px;
+line-height: 85px;
+    display: block;
+    margin: auto;
+    text-align: justify;
+
+}
+
+.three>p {
+    font-size: 63px;
+    color: white;
+    margin-bottom: 220px;
+}
+
+.four {
+    position: absolute;
+    right: 280px;
+    bottom: 350px;
+    font-size: 70px;
+
+    font-style: italic;
+    color: white;
+    line-height: 110px;
+
+}
+
+span {
+    color: #221c1e;
+}
+.trailor{
+   width:100%;
+   height: 900px;
+
+    margin-left: 100px;
+    font-size:80px;
+    margin-top: 50px;
+    line-height: 180px; 
+}
+.trailor>div{
+    margin-top: 50px;
+width:19%;
+height:1800px;
+
+}
+.trailor>div> img{
+    width: 100%;
+    border-radius: 20px;
+    
+}
+hr{
+    
+    margin-top:20px;
+    
+}
+.hr{
+    margin-top:-100px;
+}
+#related{
+    height: 700px;
+    display:grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(1,600px);
+    gap:20px;
+    
+
+    
+    padding: 70px;
+}
+#related>div{
+    
+    margin-top:-20px;
+}
+.h5tag{
+    font-size: 65px;
+    margin-left: 100px;
+    margin-top:80px;
+}
+#related img{
+    width:100%;
+    border-radius: 20px;
+}
+#watch{
+    margin-left:100px;
+    height:900px;
+    width:20%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 30px;
+    margin-top:60px;
+    font-size: 80px;
+    background-color:#f0f0f3;
+    
+    
+}
+#watch>div{
+   
+height:600px;
+width:100%;
+
+}
+#watch>div>img{
+    width:100%;
+    border-radius: 20px;
+}
+#watch p{
+    margin-left:50px;
+    margin-top:100px;
+    color:#212529;
+}
+.ptag{
+font-size:50px;
+margin-left:280px;
+margin-top: 20px;
+color: #808080;
+}
+.lasthr{
+    margin-top: 80px;
+}
+.ah5{
+    font-size: 120px;
+    margin-left: 120px;
+    margin-top: 120px;
+}
+
+#sher{
+height:1000px;
+width:100%;
+
+padding:100px;
+}
+#cheeta{
+    height: auto;
+    width:100%;
+   
+    display:flex;
+    justify-content: center;   
+
+}
+#cheeta>div{
+    line-height: 100px;
+    width:70%
+    
+}
+.aytag{
+font-size:60px ;
+
+
+}
+.aytag+p{
+    font-size:45px  ;
+    color: #a0a0a0;
+}
+.a{
+    text-align: center;
+    
+    
+}
+#cheeta>div>div>img{
+    border-radius: 240px;
+}
+#lastdiv{
+    width:100%;
+    height:auto;
+    margin-top:130px;
+    
+}
+#lastdiv>img{
+    width:100%;
+    
+}
+#lastdiv>img+img{
+    margin-top:-3px;
+}
