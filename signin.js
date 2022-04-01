@@ -18,7 +18,7 @@ function loginFun() {
       window.location.href = "index.html";
       break;
     } else {
-      console.log("login failed");
+      alert("login failed");
     }
   }
 }
