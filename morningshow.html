@@ -1,0 +1,514 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="morningshow.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Morningshow</title>
+
+    <script src="https://kit.fontawesome.com/c610c7a2ec.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- sticky navbar start -->
+    <div id="navbar_landing" class="d-flex">
+        <div class="landing_navbar_logo">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo6qwhKQ2GhFut6cOduKQTRhngw0G6zVhJLg&usqp=CAU"
+                alt="Apple-tv-logo" />
+        </div>
+        <div class="landing_navbar_signin ">
+            <button class="landing_navbar_button d-flex">
+                <div class="logo_sigin m-1">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="logo_text m-1">
+                    <a id="logo" href="signIn.html">Sign In</a>
+                </div>
+                <!-- >>>>>>> master -->
+            </button>
+        </div>
+    </div>
+    <!-- sticky navbar end -->
+
+
+
+    <div id="contain">
+        <!--main box contain image and all-->
+        <img src="https://is5-ssl.mzstatic.com/image/thumb/tX67qdmk3f1AMNzUnK3-Lw/1200x675mf.jpg" />
+
+        <div id="overwrite">
+            <!--this box contain lower text on image-->
+            <div id="boxbtn">
+                <p>Apple TV+</p>
+                <div class="box clr">
+                    <p><img class="ing"
+                        src="https://tv.apple.com/assets/button_glyphs/button_play_white@2x-e9904bc1b36cd173acf9e214cf6a158b.png" />
+                    Play Free Episode</p>
+                </div>
+                <div class="box clr1">
+                    <p>Start Free Trial</p>
+                </div>
+                <div class="box clr1">
+                    <p><img class="ing"
+                        src="https://tv.apple.com/assets/button_glyphs/button_add_white@2x-4012452e8344f8ab6e26bdd907fd4ab8.png" />
+                    Add to Up Next</p>
+                </div>
+            </div>
+
+            <div id="text">
+                <div id="para">
+                    <p>
+                        This Emmy® winner is an unapologetically candid drama that looks at the moddern workplace
+                        through the lens of the
+                        people who help wake America up. Pull back the curtain on early morning TV.
+                    </p>
+                </div>
+                <div id="k-comedy">
+                    <div>
+                        <p>Drama . <span class="fnt">2019</span> </p>
+                    </div>
+
+                    <div>
+                        <img
+                            src="https://tv.apple.com/assets/badges/common-sense-onDark-small@2x-f3312938f6b7188fbf37701e3557e399.png" /><span
+                            class="fnt"> 15+</span>
+                        <img
+                            src="https://tv.apple.com/assets/badges/MetadataBadge%204K%20OnDark-c90195dae0171c69694b4d7386421ad8.svg" />
+                        <img
+                            src="https://tv.apple.com/assets/badges/MetadataBadge%20AD%20OnDark-4731d380509cdd9c3e59e73cb9dc09d5.svg" />
+                        <img
+                            src="https://tv.apple.com/assets/badges/MetadataBadge%20Atmos%20OnDark-007278edac4076aaf1bc01dedf68e3cd.svg" />
+                        <img
+                            src="https://tv.apple.com/assets/badges/MetadataBadge%20Dolby%20OnDark-2c6afeb5b02b2c48655606bd9d178bfd.svg" />
+                        <img
+                            src="https://tv.apple.com/assets/badges/MetadataBadge%20CC%20OnDark-7b5b00df263bfee5af843510f708c307.svg" />
+                        <img
+                            src="https://tv.apple.com/assets/badges/MetadataBadge%20AD%20OnDark-4731d380509cdd9c3e59e73cb9dc09d5.svg" />
+                        <img
+                            src="https://tv.apple.com/assets/badges/MetadataBadge%20SDH%20OnDark-45f29ce5e07128bf67d924a31a003cf3.svg" />
+                    </div>
+                </div>
+            </div>
+            <div id="lst">
+                <p><span style="color:gray;">Starring</span> Jennifer Aniston, Reese Witherspoon, Steve Carell</p>
+            </div>
+
+        </div>
+    </div>
+    <!-- this is select season part -->
+    <div id="sel">
+        <select name="choice">
+            <option value="first" selected>Season 1</option>
+            <option value="second">Season 2</option>
+            <option value="third">Season 3</option>
+        </select>
+    </div>
+    <!-- selection image part      -->
+    <div id="outer_box">
+        <div id="cont">
+
+            <div id="c1">
+                <img src="https://is3-ssl.mzstatic.com/image/thumb/2gFp9MS6BGB3a_H86W-C8Q/1679x945.webp" />
+
+                <p class="marginn">EPISODE 1</p>
+                <h6>In the Dark Night of the Soul It’s Always 3:30 in the Morning</h6>
+                <p> America’s favorite morning news show is thrown into crisis when it becomes the news.
+                </p>
+                <p id="space">1 hr 3 min Nov 1,2019 <img
+                        src="https://tv.apple.com/assets/badges/ratings/us_tv/MetadataBadge%20TV-14%20OnLight-8dab395d3bf612bf622c2fbdf4ab612a.svg" />
+                    <img
+                        src="https://tv.apple.com/assets/badges/MetadataBadge%20CC%20OnLight-db01b8f3b686320f87c3566fe2a73762.svg" />
+                    <img
+                        src=" https://tv.apple.com/assets/badges/MetadataBadge%20AD%20OnLight-a575448a93571c3c9696b2a6936825c9.svg " />
+                    <img
+                        src="  https://tv.apple.com/assets/badges/MetadataBadge%20AD%20OnLight-a575448a93571c3c9696b2a6936825c9.svg" />
+                </p>
+
+            </div>
+
+            <div id="c1">
+                <img src="https://is4-ssl.mzstatic.com/image/thumb/QD0dOd4cvGFgZ_A8atFxNQ/1679x945.webp" />
+
+                <p class="marginn">EPISODE 2</p>
+                <h6>A Seat at the Table</h6>
+                <p> Alex engages in contract negotiations as she prepares to accept an award. Bradley is courted for a
+                    new opportunity.</p>
+                </p>
+                <p id="space">55 min Nov 1,2019 <img
+                        src="https://tv.apple.com/assets/badges/ratings/us_tv/MetadataBadge%20TV-14%20OnLight-8dab395d3bf612bf622c2fbdf4ab612a.svg" />
+                    <img
+                        src="https://tv.apple.com/assets/badges/MetadataBadge%20CC%20OnLight-db01b8f3b686320f87c3566fe2a73762.svg" />
+                    <img
+                        src=" https://tv.apple.com/assets/badges/MetadataBadge%20AD%20OnLight-a575448a93571c3c9696b2a6936825c9.svg " />
+                    <img
+                        src="  https://tv.apple.com/assets/badges/MetadataBadge%20AD%20OnLight-a575448a93571c3c9696b2a6936825c9.svg" />
+                </p>
+
+            </div>
+
+            <div id="c1">
+                <img src="https://is2-ssl.mzstatic.com/image/thumb/R_1IPG6JxeMIABc3GNEYEA/1679x945.webp" />
+
+                <p class="marginn">EPISODE 3</p>
+                <h6>Chaos Is the New Cocaine</h6>
+                <p>
+                    In a weekend of turmoil, TMS scrambles to prepare for its new future. </p>
+                <p id="space">53 min Nov 1,2019 <img
+                        src="https://tv.apple.com/assets/badges/ratings/us_tv/MetadataBadge%20TV-14%20OnLight-8dab395d3bf612bf622c2fbdf4ab612a.svg" />
+                    <img
+                        src="https://tv.apple.com/assets/badges/MetadataBadge%20CC%20OnLight-db01b8f3b686320f87c3566fe2a73762.svg" />
+                    <img
+                        src=" https://tv.apple.com/assets/badges/MetadataBadge%20AD%20OnLight-a575448a93571c3c9696b2a6936825c9.svg " />
+                    <img
+                        src="  https://tv.apple.com/assets/badges/MetadataBadge%20AD%20OnLight-a575448a93571c3c9696b2a6936825c9.svg" />
+                </p>
+
+            </div>
+
+            <div id="c1">
+                <img src="https://is5-ssl.mzstatic.com/image/thumb/bp7tMEP883fjBbk1wLF7LA/1679x945.webp" />
+
+                <p class="marginn">EPISODE 4</p>
+                <h6>That Woman</h6>
+                <p>
+                    TMS experiences severe growing pains as it embarks on a new era. </p>
+                <p id="space">50 min Nov 1,2019 <img
+                        src="https://tv.apple.com/assets/badges/ratings/us_tv/MetadataBadge%20TV-14%20OnLight-8dab395d3bf612bf622c2fbdf4ab612a.svg" />
+                    <img
+                        src="https://tv.apple.com/assets/badges/MetadataBadge%20CC%20OnLight-db01b8f3b686320f87c3566fe2a73762.svg" />
+                    <img
+                        src=" https://tv.apple.com/assets/badges/MetadataBadge%20AD%20OnLight-a575448a93571c3c9696b2a6936825c9.svg " />
+                    <img
+                        src="  https://tv.apple.com/assets/badges/MetadataBadge%20AD%20OnLight-a575448a93571c3c9696b2a6936825c9.svg" />
+                </p>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- end of season slect part -->
+
+    <!-- trailer sections start -->
+    <p class="trailer">Trailers</p>
+
+    <div class="trail_sec">
+        <div>
+            <img class="fitsize" id="adjusted"
+                src="https://is2-ssl.mzstatic.com/image/thumb/S4hvyopZQCav14Oag70Mhg/1000x563.webp" />
+            <p class="img_title">Bomshell: Season 2</p>
+
+        </div>
+        <div>
+            <img class="fitsize" id="adjusted"
+                src="https://is5-ssl.mzstatic.com/image/thumb/IxmmS1rQ7ouO-pKoJsVpGw/1000x563.webp" />
+            <p class="img_title"> News: Season 2</p>
+        </div>
+        <div>
+            <img class="fitsize" id="adjusted"
+                src="https://is5-ssl.mzstatic.com/image/thumb/cZUkXfqYmSy57DBI5TiTMg/1000x563.webp" />
+            <p class="img_title">My Way: Season 1</p>
+        </div>
+
+    </div>
+    <!-- trailer section over  -->
+
+    <!-- bonus content start -->
+    <p class="trailer">Bonus Content</p>
+    <div class="trail_sec">
+        <div>
+            <img class="fitsize" src="https://is1-ssl.mzstatic.com/image/thumb/V7gPe3fn1OtlSRpfOZuPLw/1000x563.webp" />
+            <p class="img_title">Legend: Season 3</p>
+        </div>
+        <div>
+            <img class="fitsize" src="https://is5-ssl.mzstatic.com/image/thumb/1yYsK3GHouKqy4gotnm-eQ/1000x563.webp" />
+            <p class="img_title"> Forbidden: Season 2</p>
+        </div>
+        <div>
+            <img class="fitsize" src="https://is2-ssl.mzstatic.com/image/thumb/V0MvS00qH_NJYVQlGNNhlg/1000x563.webp" />
+            <p class="img_title">Immortality: Season 1</p>
+        </div>
+        <div>
+            <img class="fitsize" src="https://is2-ssl.mzstatic.com/image/thumb/gHPljtSbNflF_g-NW_EvzA/1000x563.webp" />
+            <p class="img_title">Afterlife: Season 1</p>
+        </div>
+        <div>
+            <img class="fitsize" src="https://is5-ssl.mzstatic.com/image/thumb/YbgEvN514823kBaTdW44kg/1000x563.webp" />
+            <p class="img_title">Wild: Season 1</p>
+        </div>
+    </div>
+    <hr>
+    <!-- bonus content part over -->
+    <!-- releated section start -->
+    <p class="trailer">Related</p>
+    <div id="outertrail">
+        <div class="lsttrail slider" id="releated-div">
+
+
+        </div>
+        <hr>
+
+
+        <!-- cast and crew -->
+
+        <p class="trailer">Cast & Crew</p>
+        <div>
+            <div class="cast_contain slider1">
+                <div>
+                    <img class="round"
+                        src="https://is2-ssl.mzstatic.com/image/thumb/B21tI7YB2hWQ87t6QvIgrw/492x492ve.webp" />
+                    <h6 class="name">Jennifer Anistone</h6>
+                    <p class="title">Alex levy</p>
+                </div>
+                <div>
+                    <img class="round"
+                        src="https://is3-ssl.mzstatic.com/image/thumb/_I3hJjd9_XUhCgmIZhWNeQ/492x492ve.webp" />
+                    <h6 class="name">Reese Witherspoon</h6>
+                    <p class="title">Bradley Jackson</p>
+                </div>
+                <div>
+                    <img class="round"
+                        src="https://is1-ssl.mzstatic.com/image/thumb/498uqp4mcsFsAHl_D1BEaw/492x492ve.webp" />
+                    <h6 class="name">Steve Carell</h6>
+                    <p class="title">Mitch Kessler</p>
+                </div>
+                <div>
+                    <img class="round"
+                        src="https://is2-ssl.mzstatic.com/image/thumb/CDNLtOAC3wi3MLoHQyYFVg/492x492ve.webp" />
+                    <h6 class="name">Billy Crudup</h6>
+                    <p class="title">Cory Elison</p>
+                </div>
+                <div>
+                    <img class="round"
+                        src="https://is2-ssl.mzstatic.com/image/thumb/XJjn6SMUn0Ay2zqiNCNQjw/492x492ve.webp" />
+                    <h6 class="name">Mark Duplass</h6>
+                    <p class="title">Blavk levy</p>
+                </div>
+                <div>
+                    <img class="round"
+                        src="https://is2-ssl.mzstatic.com/image/thumb/ZVaJLYNmPzpNBk57vzolnw/492x492ve.webp" />
+                    <h6 class="name">Greta Lee</h6>
+                    <p class="title">Stella</p>
+                </div>
+                <div>
+                    <img class="round"
+                        src="https://is2-ssl.mzstatic.com/image/thumb/ZOl_Pu6a3j7h5h2xT1-70g/492x492ve.webp" />
+                    <h6 class="name">Nestor Carbonell</h6>
+                    <p class="title">Kare</p>
+                </div>
+                <div>
+                    <img class="round"
+                        src="https://is5-ssl.mzstatic.com/image/thumb/EBVivox9Sb9pDSsyO6mY3Q/492x492ve.webp" />
+                    <h6 class="name">Karen Pittman</h6>
+                    <p class="title">Mia Jordan</p>
+                </div>
+                <div>
+                    <img class="round"
+                        src="https://is5-ssl.mzstatic.com/image/thumb/Z4wOamQUriYLORXqV7iQ3A/492x492ve.webp" />
+                    <h6 class="name">Bel Powley</h6>
+                    <p class="title">Clarie levy</p>
+                </div>
+                <div>
+                    <img class="round"
+                        src="https://is2-ssl.mzstatic.com/image/thumb/7xR219S2-DaQbwPl34jqOQ/492x492ve.webp" />
+                    <h6 class="name">Dessan Terry</h6>
+                    <p class="title">Daniel Henderson</p>
+                </div>
+                <div>
+                    <img class="round"
+                        src="https://is1-ssl.mzstatic.com/image/thumb/lGfB_YmX0uPbxUsaGIk_XA/492x492ve.webp" />
+                    <h6 class="name">Rulair Connor</h6>
+                    <p class="title">Ty</p>
+                </div>
+                <div>
+                    <img class="round"
+                        src="https://is5-ssl.mzstatic.com/image/thumb/ryB5HGhRtwCgXboQQz5NyA/492x492ve.webp" />
+                    <h6 class="name">Gugu Raw</h6>
+                    <p class="title">Hannam Shild</p>
+                </div>
+                <div>
+                    <img class="round"
+                        src="https://is2-ssl.mzstatic.com/image/thumb/jjwpBguslFDD28P28Q3Bnw/492x492ve.webp" />
+                    <h6 class="name">Jack Danenport</h6>
+                    <p class="title">Jason Craig</p>
+                </div>
+                <div>
+                    <img class="round"
+                        src="https://is3-ssl.mzstatic.com/image/thumb/D-slcYbM20suUVBw3saQAw/492x492ve.webp" />
+                    <h6 class="name">Kerry Ehirin</h6>
+                    <p class="title">Executive Producer</p>
+                </div>
+                <div>
+                    <img class="round"
+                        src="https://is2-ssl.mzstatic.com/image/thumb/viOBURpyJcOJKpysmp6C9Q/492x492ve.webp" />
+                    <h6 class="name">Mimi Leder</h6>
+                    <p class="title"> Executive Producer</p>
+                </div>
+                <div>
+                    <img class="round"
+                        src="https://is4-ssl.mzstatic.com/image/thumb/hf6eT97F5jhxC9TYn3whWg/492x492ve.webp" />
+                    <h6 class="name">Michael Eliberg</h6>
+                    <p class="title"> Executive Producer</p>
+                </div>
+                <div>
+                    <img class="round"
+                        src="https://is3-ssl.mzstatic.com/image/thumb/7YL8GzwnzaNM57RW6_ktag/492x492bb.webp" />
+                    <h6 class="name">Resse Witherson</h6>
+                    <p class="title">Executive Producer</p>
+                </div>
+                <div>
+                    <img class="round"
+                        src="https://is4-ssl.mzstatic.com/image/thumb/PqklCgX1n5Ru6l_mLPImfA/492x492bb.webp" />
+                    <h6 class="name">Lauren Levy</h6>
+                    <p class="title"> Executive Producer</p>
+                </div>
+                <div>
+                    <img class="round"
+                        src="https://is4-ssl.mzstatic.com/image/thumb/CnBAYMFnoNAtFWLZE2A2aw/492x492ve.webp" />
+                    <h6 class="name">Kristin Hahn</h6>
+                    <p class="title"> Executive Producer</p>
+                </div>
+                <div>
+                    <img class="round"
+                        src="https://is2-ssl.mzstatic.com/image/thumb/jjwpBguslFDD28P28Q3Bnw/492x492ve.webp" />
+                    <h6 class="name">Adam Milch</h6>
+                    <p class="title">Alex levy</p>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <!-- where to watch -->
+        <p class="trailer">How to Watch</p>
+
+        <div>
+            <div id="watchbox">
+                <img src="https://is1-ssl.mzstatic.com/image/thumb/DB8YqlVtN7M8YvGvgsP2eg/400x225.png" />
+                <p>Start Free Trial</p>
+            </div>
+            <p>7 days free than $4.99/month.</p>
+        </div>
+        <!-- footer -->
+
+    </div>
+    <div class="foot">
+        <p class="f-title">About</p>
+        <div id="p-card">
+
+            <div class="c-ard">
+
+                <p id="p-title">The Morning Show</p>
+                <p id="p-subt">Drama</p>
+
+                <p id="p-des">This Emmy® winner is an unapologetically candid drama that looks at the modern workplace
+                    through the lens of the people who help wake America up. Pull back the curtain on early morning TV.
+                </p>
+            </div>
+            <div class="c-ard">
+                <div id="b2-sym">
+                    <img src="./comon.png" />
+                    <p id="p2-head">15+</p>
+
+                </div>
+                <p>Common Sense</p>
+                <p>Great actors and a strong storyline in compelling drama.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="d-flex justify-content-between">
+            <div class="f-lower">
+                <p id="p-title">Information</p>
+                <div class="info">
+                    <p class="bold">Genre</p>
+                    <p>Drama</p>
+                </div>
+                <div class="info">
+                    <p class="bold">Released</p>
+                    <p>2019</p>
+                </div>
+                <div class="info">
+                    <p class="bold">Rated</p>
+                    <p>TV-MA</p>
+                </div>
+                <div class="info">
+                    <p class="bold">Region of Origin</p>
+                    <p>United States</p>
+                </div>
+                <div class="info">
+                    <p class="bold">Original Audio</p>
+                    <p>English</p>
+                </div>
+
+            </div>
+            <div class="f-lower">
+                <p id="p-title">Languages</p>
+                <div class="info">
+                    <p class="bold">Audio</p>
+                    <p>
+                        English (AD, Dolby Atmos, Dolby 5.1, AAC), and 9 more...</p>
+                </div>
+                <div class="info">
+                    <p class="bold">Subtitles</p>
+                    <p>English (CC, SDH), and 40 more...</p>
+                    <p class="bluue">See All</p>
+                </div>
+            </div>
+            <div class="f-lower">
+                <p id="p-title">Accessibility</p>
+                <div class="info">
+                    <p class="graay"><img
+                            src="https://tv.apple.com/assets/badges/MetadataBadge%20CC%20OnLight-db01b8f3b686320f87c3566fe2a73762.svg" />
+                    </p>
+                    <p>Closed captions (CC) refer to subtitles in the available language with the addition of relevant
+                        non-dialogue information.
+                    </p>
+                </div>
+                <div class="info">
+                    <p class="graay"><img
+                            src="https://tv.apple.com/assets/badges/MetadataBadge%20AD%20OnLight-a575448a93571c3c9696b2a6936825c9.svg" />
+                    </p>
+                    <p>Audio descriptions (AD) refer to a narration track describing what is happening on screen, to
+                        provide context for those who are blind or have low vision.
+
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <div class="footer1">
+            Copyright © 2022 Apple Inc. All rights reserved.
+            <button>United States</button>
+        </div>
+        <div class="footer2">
+            Internet Service Terms | Apple TV & Privacy | Cookie Warning | Support
+        </div>
+    </div>
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="./morningshow.js"></script>
+</body>
+
+</html>
