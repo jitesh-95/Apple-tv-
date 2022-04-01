@@ -5,7 +5,6 @@ body {
 
 * {
     box-sizing: border-box;
-
 }
 
 h3 {
@@ -24,15 +23,16 @@ h3 {
 
 }
 
-#container {
-    height: 550px;
-    width: 55%;
-    overflow-y: scroll;
-    scroll-behavior: auto;
+.main {
+    height: 575px;
+    width: 100%;
+    overflow-y:scroll;
+    scroll-behavior:smooth;
     border-radius: 15px;
-    
+    padding-top: 0px;
 }
-i{
+
+i {
     padding: 15px;
     color: rgb(185, 181, 178);
 }
@@ -52,35 +52,42 @@ img {
     height: 30px;
     width: 100%;
 }
-.form{
+
+.form {
     height: 650px;
     width: 74%;
     margin: auto;
 }
-.form-control{
+
+.form-control {
     height: 60px;
     border-radius: 10px;
 }
-#ack > a{
+
+#ack>a {
     text-decoration: none;
 }
-#ack{
+
+#ack {
     font-size: 12px;
 }
-.btn1{
-    height:40px;
+
+.btn1 {
+    height: 40px;
     width: 45%;
-    
-    margin-top:40px;
-    padding-left: 200px ;
+
+    margin-top: 40px;
+    padding-left: 200px;
     margin-left: 300px;
-    
+
 }
-.btn{
+
+.btn {
     border-radius: 8px;
     font-weight: bold;
     width: 100px;
 }
-.hr{
+
+.hr {
     margin-top: 50px;
 }
