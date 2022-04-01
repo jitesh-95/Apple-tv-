@@ -53,7 +53,7 @@ button {
   position: absolute;
   color: white;
   top: 0;
-  margin-top: 465px;
+  margin-top: 33%;
   text-align: center;
   width: 100%;
 }
@@ -75,9 +75,35 @@ button {
   line-height: 5px;
   color: #888c8d;
 }
-#innerhead > p > span {
+#innerhead > p > a {
   color: #0167d6;
-  cursor: pointer;
+  text-decoration: none;
+}
+/* medium scree  */
+
+@media all and (min-width: 600px) and (max-width: 1100px) {
+  #innerhead {
+    margin-top: 27%;
+  }
+  #innerhead > h1 {
+    font-size: 35px;
+    margin-bottom: 10px;
+  }
+  #innerhead > h4 {
+    font-size: 15px;
+    width: 40%;
+    margin: auto;
+  }
+  #innerhead > button {
+    padding: 2px 20px 2px 20px;
+    font-size: 10px;
+  }
+  #innerhead > p {
+    font-size: 10px;
+    width: 40%;
+    line-height: 14px;
+    margin: auto;
+  }
 }
 
 /* ============================================= */
@@ -99,9 +125,6 @@ button {
 .picture {
   padding: 5px 10px 8px 4px;
   cursor: pointer;
-}
-.picture:hover {
-  filter: contrast(70%);
 }
 .picture > img {
   border-radius: 15px;
@@ -135,7 +158,7 @@ button {
   cursor: pointer;
 }
 .inner_seasons:hover {
-  filter: contrast(70%);
+  filter: contrast(80%);
 }
 .inner_seasons > img {
   width: 100%;
@@ -168,9 +191,6 @@ button {
   height: 130px;
   padding-bottom: 10px;
   padding-left: 10px;
-}
-.imagediv:hover {
-  filter: contrast(70%);
 }
 .imagediv > img {
   width: 100%;
@@ -224,9 +244,6 @@ button {
   padding-bottom: 8px;
   padding-left: 5px;
 }
-.comingSoonData:hover {
-  filter: contrast(70%);
-}
 .comingSoonData > img {
   width: 100%;
   height: 100%;
@@ -258,9 +275,6 @@ button {
   padding-bottom: 8px;
   margin-right: 8px;
   margin-left: 8px;
-}
-.innerBigSlides:hover {
-  filter: contrast(80%);
 }
 .innerBigSlides > img {
   width: 100%;
@@ -484,11 +498,6 @@ button {
   padding: 5px 10px 8px 4px;
   cursor: pointer;
 }
-.pachinko_picture:hover,
-.planet_picture:hover,
-.kidFamily_picture:hover {
-  filter: contrast(70%);
-}
 .pachinko_picture > img,
 .planet_picture > img,
 .kidFamily_picture > img {
@@ -541,23 +550,23 @@ button {
   justify-content: space-evenly;
 }
 #apple {
-  margin-top: 8px;
+  margin-top: 15px;
   cursor: pointer;
 }
 #iphone {
-  margin-bottom: 6px;
+  margin-top: 12px;
   cursor: pointer;
 }
 #ipad {
-  margin-bottom: 18px;
+  margin-bottom: 20px;
   cursor: pointer;
 }
 #mac {
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   cursor: pointer;
 }
 #airplay {
-  margin-top: 6px;
+  margin-top: 15px;
   cursor: pointer;
 }
 .black_box > h4 {
@@ -599,4 +608,5 @@ button {
 .footer2 {
   color: #383737;
   cursor: pointer;
+  width: 30%;
 }
