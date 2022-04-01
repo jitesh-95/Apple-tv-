@@ -1353,3 +1353,12 @@ invasion.map(function(elem){
 })
 
 
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+    document.querySelector(".bottom_bar").style.bottom = "0";
+  } else {
+    document.querySelector(".bottom_bar").style.bottom = "-100px";
+  }
+}
