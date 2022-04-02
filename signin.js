@@ -11,15 +11,13 @@ function loginFun() {
 
   for (var i = 0; i < regdUsers.length; i++) {
     console.log(regdUsers[i]);
-    if (
-      regdUsers[i].email == enteredEmail
-   
-    ) {
-
+    if (regdUsers[i].email == enteredEmail) 
+    {
       alert("login success");
       window.location.href = "index.html";
       break;
-    } else {
+    } 
+    else {
       console.log("login failed");
     }
   }
