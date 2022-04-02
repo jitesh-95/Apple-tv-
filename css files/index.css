@@ -27,7 +27,7 @@
   border-radius: 5px;
   /* margin: 7px; */
   margin-left: 10px;
-  width:50px;
+  width:90px;
 }
 .d-flex {
   display: flex !important;
@@ -38,6 +38,7 @@ button {
 #logo {
   color: white;
   text-decoration: none;
+ 
 }
 
 /* ============================================ */
