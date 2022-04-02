@@ -1,15 +1,15 @@
 
 var bestpicture=[
   {image: "https://is2-ssl.mzstatic.com/image/thumb/Features112/v4/6f/b7/62/6fb7628d-679f-17db-dbf6-ac52a7debb06/d97eccb1-2dbf-45b5-a35d-452d9496715f.lsr/300x170fe.webp",
-  link:""},
+  link:"coda.html"},
   {image: "https://is5-ssl.mzstatic.com/image/thumb/Features112/v4/de/3a/28/de3a2812-29b3-1e25-7941-a99ecb0e327c/851040fe-d937-4c50-b7d2-1188d59a022e.lsr/300x170fe.webp",
-  link:""},
+  link:"coda.html"},
   {image: "https://is3-ssl.mzstatic.com/image/thumb/Features116/v4/4d/5e/12/4d5e12e1-9063-1e07-62be-b209b75401ff/19aac7af-1170-4a01-9f9e-b281b54f78df.lsr/300x170fe.webp",
-  link:""},
+  link:"coda.html"},
   {image: "https://is4-ssl.mzstatic.com/image/thumb/Features122/v4/6e/6b/c5/6e6bc5c0-0329-5915-f402-3dd9e31b0ad1/0b0c78ef-1abb-44c5-af22-d7f46c5425f1.lsr/300x170fe.webp",
-  link:""},
+  link:"coda.html"},
   {image: "https://is4-ssl.mzstatic.com/image/thumb/Features122/v4/ec/04/37/ec04376f-cf86-af1b-c914-444ef8236722/fdd6d9eb-204a-4a18-b69c-1f44af47b952.lsr/300x170fe.webp",
-  link:""},
+  link:"coda.html"},
 ];
 
 bestpicture.map(function(elem){
@@ -371,7 +371,7 @@ $('.inner_coming_soon').slick({
 var big_slides = [
   {image :"https://is2-ssl.mzstatic.com/image/thumb/Features122/v4/cf/08/c2/cf08c2dc-09de-7051-8f45-26bc88e35ec3/5869a9d8-e575-417f-a315-5d78822f6886.png/1320x495sr.png",
   tag : "Every family has its own language.",
-  link : ""},
+  link : "coda.html"},
   {image :"https://is3-ssl.mzstatic.com/image/thumb/Features122/v4/67/ad/d0/67add023-9baa-9f3c-3999-0232ee7ab869/07dec570-b1ae-4348-bce7-3ae353ce335b.png/1320x495sr.png",
   tag : "Four generations. One destiny.",
   link : "https://tv.apple.com/us/show/pachinko/umc.cmc.17vf6g68dy89kk1l1nnb6min4?ctx_brand=tvs.sbd.4000"},
@@ -596,7 +596,7 @@ $('.innerAmbition').slick({
 
 var findingVoices=[
   {Image : "https://is1-ssl.mzstatic.com/image/thumb/zRCSBlp0LjwClRXsjyDNYQ/738x416.webp",
-  link:""},
+  link:"coda.html"},
   {Image : "https://is3-ssl.mzstatic.com/image/thumb/cyRvgYnPlaVn3rN2SDdW1Q/738x416.webp",
   link:"https://tv.apple.com/us/movie/the-sky-is-everywhere/umc.cmc.22xahad7xeqkok7u24xk0e788?ctx_brand=tvs.sbd.4000"},
   {Image : "https://is3-ssl.mzstatic.com/image/thumb/3iAbZQ4pznOpDRenkvOhNA/738x416.webp",
