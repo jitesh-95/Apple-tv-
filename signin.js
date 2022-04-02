@@ -5,16 +5,9 @@ var regdUsers = JSON.parse(localStorage.getItem("userdata"));
 function loginFun() {
   event.preventDefault();
 
-  var enteredEmail = document.querySelector("#email").value;
-  //console.log(email);
-
-  for (var i = 0; i < regdUsers.length; i++) {
-    console.log(regdUsers[i]);
-    if (regdUsers[i].email == enteredEmail) {
-
   var enteredEmail = document.querySelector("#inputemail").value;
-
   //console.log(email);
+
 
   for (var i = 0; i < regdUsers.length; i++) {
     console.log(regdUsers[i]);
