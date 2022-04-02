@@ -1,0 +1,93 @@
+body {
+    background: url(signin.png);
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h3 {
+    margin-top: 0px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#container {
+    height: 590px;
+    width: 55%;
+    margin: auto;
+    border-radius: 15px;
+    margin-top: 2%;
+    background-color: white;
+
+}
+
+.main {
+    height: 575px;
+    width: 100%;
+    overflow-y:scroll;
+    scroll-behavior:smooth;
+    border-radius: 15px;
+    padding-top: 0px;
+}
+
+i {
+    padding: 15px;
+    color: rgb(185, 181, 178);
+}
+
+.logo {
+    display: flex;
+    height: 50px;
+    width: 100%;
+    margin-bottom: 0px;
+    padding: 10px;
+    margin: auto;
+    justify-content: space-between;
+    margin-top: 1%;
+}
+
+img {
+    height: 30px;
+    width: 100%;
+}
+
+.form {
+    height: 650px;
+    width: 74%;
+    margin: auto;
+}
+
+.form-control {
+    height: 60px;
+    border-radius: 10px;
+}
+
+#ack>a {
+    text-decoration: none;
+}
+
+#ack {
+    font-size: 12px;
+}
+
+.btn1 {
+    height: 40px;
+    width: 45%;
+
+    margin-top: 40px;
+    padding-left: 200px;
+    margin-left: 300px;
+
+}
+
+.btn {
+    border-radius: 8px;
+    font-weight: bold;
+    width: 100px;
+}
+
+.hr {
+    margin-top: 50px;
+}
