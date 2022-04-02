@@ -6,7 +6,6 @@
 .landing_navbar_logo > img {
   width: 22%;
   height: 20%;
-
 }
 #navbar_landing {
   width: 100%;
@@ -27,7 +26,8 @@
   border-radius: 5px;
   /* margin: 7px; */
   margin-left: 10px;
-  width:50px;
+  width: 80px;
+  align-items: center;
 }
 .d-flex {
   display: flex !important;
