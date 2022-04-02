@@ -3,7 +3,10 @@
 ::before {
   box-sizing: border-box;
 }
-
+*{
+  font-family:LY
+  -apple-system, BlinkMacSystemFont, -webkit-system-font, "Malgun Gothic", "Segoe UI", "Helvetica Neue", Helvetica, sans-serif;
+}
 /* nab bar css */
 .landing_navbar_logo > img {
   width: 22%;
@@ -47,7 +50,9 @@ button {
     /* position: relative; */
     box-sizing: border-box;
 }
-
+video{
+  width:100%;
+}
 #contain > img{
     width:100%;
 }
@@ -55,7 +60,7 @@ button {
 #overwrite{
     position:absolute;
     bottom:0;
-    top:900px;
+    top:600px;
     color:white;
     cursor: default;
     height:160px;
@@ -64,6 +69,21 @@ button {
     margin-left:50px;
     display:flex;
 }
+
+#morningshow>img{
+  position:absolute;
+  /* top:10px; */
+  margin-left:40px;
+  margin-top:40px;
+  height:120px;
+  width:350px;
+  /* border:2px solid maroon; */
+  }
+
+  video{
+    width:100%;
+  }
+
 #boxbtn{
     width:20%;
     /* border:2px solid black; */
@@ -104,7 +124,7 @@ button {
 }
 
 .box > p{
-    padding-top: 5px;
+    padding-top: 8px;
 
 }
 .clr1{
@@ -135,6 +155,8 @@ button {
   /* border: 1px solid red; */
   height: 13px;
   width:366px;
+  color:gray;
+
   /* margin-left:20px; */
   margin-top: 20px;
   display:flex;
@@ -231,6 +253,7 @@ h6{
 #c1 p{
   margin-top:-3px;
   font-size: 12px;
+  color:gray;
   cursor: pointer;
 }
 
@@ -294,6 +317,10 @@ hr{
   width:245px;
   border-radius: 12px;
 }
+.fitsize+p{
+  color:gray;
+
+}
 .fitsize:hover{
   filter:contrast(70%);
 }
@@ -313,6 +340,7 @@ hr{
  .next_arrow{
     /* border: 1px solid red; */
     font-size: 35px;
+    color:#f0f0f3;
     cursor: pointer;
     position: absolute;
     top: 50px;
@@ -325,6 +353,7 @@ hr{
     /* height:310px; */
     font-size: 35px;
     cursor: pointer;
+    color:#f0f0f3;
     position: absolute;
     top: 50px;
     left:-18px;
@@ -537,14 +566,6 @@ p:nth-child(1){
     cursor: pointer;
   }
 
- #contain > video{
-     position: relative;
-     /* border: 4px solid maroon; */
-     bottom:0;
-      width: 100%;
-      height: 100%;
-  }
-  
   #again_adjust{
       /* width:240px; */
       border:1px solid;

@@ -3,6 +3,10 @@
 ::before {
   box-sizing: border-box;
 }
+*{
+  font-family: LY
+  -apple-system, BlinkMacSystemFont, -webkit-system-font, "Malgun Gothic", "Segoe UI", "Helvetica Neue", Helvetica, sans-serif;
+}
 
 /* nab bar css */
 .landing_navbar_logo > img {
@@ -49,14 +53,29 @@ button {
 #overwrite{
     position:absolute;
     bottom:0;
-    top:900px;
+    top:600px;
     cursor:default;
     color:white;
     height:auto;
     width:90%;
     margin-left:50px;
     display:flex;
+    /* border:1px solid maroon; */
 }
+
+#dickinson>img{
+  position:absolute;
+  /* top:10px; */
+  margin-left:40px;
+  margin-top:40px;
+  height:120px;
+  width:350px;
+  /* border:2px solid maroon; */
+  }
+
+  video{
+    width:100%;
+  }
 #boxbtn{
     width:20%;
   }
@@ -94,8 +113,8 @@ button {
   margin-right:4px;
 }
 .box > p{
-    padding-top: 5px;
-
+    padding-top: 8px;
+/* border:1px solid maroon; */
 }
 .clr1{
     background-color:#545454;
@@ -124,6 +143,7 @@ button {
   /* border: 1px solid red; */
   height: 13px;
   width:366px;
+  color:gray;
   /* margin-left:20px; */
   margin-top: 20px;
   display:flex;
