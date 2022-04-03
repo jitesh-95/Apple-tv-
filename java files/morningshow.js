@@ -66,6 +66,14 @@ related.map(function (ele) {
   document.querySelector("#releated-div").append(relate);
 })
 
+var video = document.getElementById("video_background");
+video.addEventListener("canplay", function() {
+  setTimeout(function() {
+    video.play();
+  }, 5000);
+});
+
+
 $('.slider2').slick({
   dots: false,
   infinite: false,

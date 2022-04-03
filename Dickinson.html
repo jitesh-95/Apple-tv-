@@ -16,12 +16,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
         integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Dickinson | Apple TV+</title>
-    <link
-      rel="icon"
-      href="https://tv.apple.com/assets/favicon/favicon-180-dcb7e297396806943a930ba83f20ea56.png"
-      type="image/x-icon"
-    />
+    <title>Dickinson</title>
 
     <script src="https://kit.fontawesome.com/c610c7a2ec.js" crossorigin="anonymous"></script>
 </head>
@@ -50,9 +45,20 @@
 
     <div id="imager">
 
+        <div id="dickinson">
+            <img src="https://is4-ssl.mzstatic.com/image/thumb/xXeavbfof-NKWkM2-i8NyA/1200x450.webp"/>
+        </div>    
         <div id="contain">
             <!--main box contain image and all-->
-            <img src="https://is5-ssl.mzstatic.com/image/thumb/tX67qdmk3f1AMNzUnK3-Lw/1200x675mf.jpg" />
+            <video
+            id="video_background"
+            poster="https://is5-ssl.mzstatic.com/image/thumb/tX67qdmk3f1AMNzUnK3-Lw/1679x945sr.webp"
+            preload="true"
+            muted
+          >
+            <source src="./images&videos/dickinson.mp4" />
+          </video>
+            <!-- <img src="https://is5-ssl.mzstatic.com/image/thumb/tX67qdmk3f1AMNzUnK3-Lw/1200x675mf.jpg" /> -->
             <div id="overwrite">
                 <!--this box contain lower text on image-->
                 <div id="boxbtn">
@@ -81,7 +87,7 @@
                     </div>
                     <div id="k-comedy">
                         <div>
-                            <p>Drama . <span class="fnt">2019</span> </p>
+                            <p>Comedy . <span class="fnt">2019</span> </p>
                         </div>
 
                         <div>
@@ -428,7 +434,7 @@
             </div>
             <div class="c-ard">
                 <div id="b2-sym">
-                    <img src="./images&videos/comon.png" />
+                    <img src="./comon.png" />
                     <p id="p2-head">15+</p>
 
                 </div>
